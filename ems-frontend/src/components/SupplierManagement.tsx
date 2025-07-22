@@ -8,7 +8,15 @@ export default function SupplierManagement() {
   const [searchTerm, setSearchTerm] = useState('')
   const [showModal, setShowModal] = useState(false)
   const [editingSupplier, setEditingSupplier] = useState<Supplier | null>(null)
-  const [formData, setFormData] = useState({ idcode: '', name: '' })
+  const [formData, setFormData] = useState({ 
+    idcode: '', 
+    name: '', 
+    address: '', 
+    telephone_no: '', 
+    fax_no: '', 
+    email: '', 
+    tin_no: '' 
+  })
 
   useEffect(() => {
     fetchSuppliers()
@@ -29,14 +37,29 @@ export default function SupplierManagement() {
     e.preventDefault()
     try {
       if (editingSupplier) {
-        await apiClient.updateSupplier(editingSupplier.id, { name: formData.name })
+        await apiClient.updateSupplier(editingSupplier.id, {
+          name: formData.name,
+          address: formData.address || undefined,
+          telephone_no: formData.telephone_no || undefined,
+          fax_no: formData.fax_no || undefined,
+          email: formData.email || undefined,
+          tin_no: formData.tin_no || undefined
+        })
       } else {
-        await apiClient.createSupplier(formData)
+        await apiClient.createSupplier({
+          idcode: formData.idcode,
+          name: formData.name,
+          address: formData.address || undefined,
+          telephone_no: formData.telephone_no || undefined,
+          fax_no: formData.fax_no || undefined,
+          email: formData.email || undefined,
+          tin_no: formData.tin_no || undefined
+        })
       }
       await fetchSuppliers()
       setShowModal(false)
       setEditingSupplier(null)
-      setFormData({ idcode: '', name: '' })
+      setFormData({ idcode: '', name: '', address: '', telephone_no: '', fax_no: '', email: '', tin_no: '' })
     } catch (error) {
       console.error('Error saving supplier:', error)
     }
@@ -44,7 +67,15 @@ export default function SupplierManagement() {
 
   const handleEdit = (supplier: Supplier) => {
     setEditingSupplier(supplier)
-    setFormData({ idcode: supplier.idcode, name: supplier.name })
+    setFormData({ 
+      idcode: supplier.idcode, 
+      name: supplier.name,
+      address: supplier.address || '',
+      telephone_no: supplier.telephone_no || '',
+      fax_no: supplier.fax_no || '',
+      email: supplier.email || '',
+      tin_no: supplier.tin_no || ''
+    })
     setShowModal(true)
   }
 
@@ -86,7 +117,7 @@ export default function SupplierManagement() {
             type="button"
             onClick={() => {
               setEditingSupplier(null)
-              setFormData({ idcode: '', name: '' })
+              setFormData({ idcode: '', name: '', address: '', telephone_no: '', fax_no: '', email: '', tin_no: '' })
               setShowModal(true)
             }}
             className="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
@@ -131,7 +162,14 @@ export default function SupplierManagement() {
                     </div>
                     <div className="text-sm text-gray-500">
                       ID: {supplier.idcode}
+                      {supplier.telephone_no && ` • Tel: ${supplier.telephone_no}`}
+                      {supplier.email && ` • ${supplier.email}`}
                     </div>
+                    {supplier.address && (
+                      <div className="text-sm text-gray-500 truncate max-w-xs">
+                        {supplier.address}
+                      </div>
+                    )}
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -187,6 +225,65 @@ export default function SupplierManagement() {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                     required
                     maxLength={50}
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Address
+                  </label>
+                  <textarea
+                    value={formData.address}
+                    onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    rows={3}
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Telephone No
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.telephone_no}
+                    onChange={(e) => setFormData({ ...formData, telephone_no: e.target.value })}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    maxLength={20}
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Fax No
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.fax_no}
+                    onChange={(e) => setFormData({ ...formData, fax_no: e.target.value })}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    maxLength={20}
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    maxLength={100}
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Tin No
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.tin_no}
+                    onChange={(e) => setFormData({ ...formData, tin_no: e.target.value })}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    maxLength={20}
                   />
                 </div>
                 <div className="flex justify-end space-x-3">

@@ -8,7 +8,13 @@ export default function DepartmentManagement() {
   const [searchTerm, setSearchTerm] = useState('')
   const [showModal, setShowModal] = useState(false)
   const [editingDepartment, setEditingDepartment] = useState<Department | null>(null)
-  const [formData, setFormData] = useState({ idcode: '', name: '' })
+  const [formData, setFormData] = useState({ 
+    idcode: '', 
+    name: '', 
+    short_name: '', 
+    division: '', 
+    location: '' 
+  })
 
   useEffect(() => {
     fetchDepartments()
@@ -29,14 +35,25 @@ export default function DepartmentManagement() {
     e.preventDefault()
     try {
       if (editingDepartment) {
-        await apiClient.updateDepartment(editingDepartment.id, { name: formData.name })
+        await apiClient.updateDepartment(editingDepartment.id, {
+          name: formData.name,
+          short_name: formData.short_name || undefined,
+          division: formData.division || undefined,
+          location: formData.location || undefined
+        })
       } else {
-        await apiClient.createDepartment(formData)
+        await apiClient.createDepartment({
+          idcode: formData.idcode,
+          name: formData.name,
+          short_name: formData.short_name || undefined,
+          division: formData.division || undefined,
+          location: formData.location || undefined
+        })
       }
       await fetchDepartments()
       setShowModal(false)
       setEditingDepartment(null)
-      setFormData({ idcode: '', name: '' })
+      setFormData({ idcode: '', name: '', short_name: '', division: '', location: '' })
     } catch (error) {
       console.error('Error saving department:', error)
     }
@@ -44,7 +61,13 @@ export default function DepartmentManagement() {
 
   const handleEdit = (department: Department) => {
     setEditingDepartment(department)
-    setFormData({ idcode: department.idcode, name: department.name })
+    setFormData({ 
+      idcode: department.idcode, 
+      name: department.name,
+      short_name: department.short_name || '',
+      division: department.division || '',
+      location: department.location || ''
+    })
     setShowModal(true)
   }
 
@@ -86,7 +109,7 @@ export default function DepartmentManagement() {
             type="button"
             onClick={() => {
               setEditingDepartment(null)
-              setFormData({ idcode: '', name: '' })
+              setFormData({ idcode: '', name: '', short_name: '', division: '', location: '' })
               setShowModal(true)
             }}
             className="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
@@ -131,6 +154,9 @@ export default function DepartmentManagement() {
                     </div>
                     <div className="text-sm text-gray-500">
                       ID: {department.idcode}
+                      {department.short_name && ` • ${department.short_name}`}
+                      {department.division && ` • ${department.division}`}
+                      {department.location && ` • ${department.location}`}
                     </div>
                   </div>
                 </div>
@@ -187,6 +213,42 @@ export default function DepartmentManagement() {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                     required
                     maxLength={50}
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Short Name
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.short_name}
+                    onChange={(e) => setFormData({ ...formData, short_name: e.target.value })}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    maxLength={20}
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Division
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.division}
+                    onChange={(e) => setFormData({ ...formData, division: e.target.value })}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    maxLength={50}
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Location
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.location}
+                    onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    maxLength={100}
                   />
                 </div>
                 <div className="flex justify-end space-x-3">

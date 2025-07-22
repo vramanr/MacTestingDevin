@@ -4,6 +4,9 @@ export interface Department {
   id: number;
   idcode: string;
   name: string;
+  short_name?: string;
+  division?: string;
+  location?: string;
   created_at: string;
 }
 
@@ -18,6 +21,11 @@ export interface Supplier {
   id: number;
   idcode: string;
   name: string;
+  address?: string;
+  telephone_no?: string;
+  fax_no?: string;
+  email?: string;
+  tin_no?: string;
   created_at: string;
 }
 

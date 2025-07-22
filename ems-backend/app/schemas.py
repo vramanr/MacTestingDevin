@@ -5,12 +5,18 @@ from datetime import date, datetime
 class DepartmentBase(BaseModel):
     idcode: str
     name: str
+    short_name: Optional[str] = None
+    division: Optional[str] = None
+    location: Optional[str] = None
 
 class DepartmentCreate(DepartmentBase):
     pass
 
 class DepartmentUpdate(BaseModel):
     name: Optional[str] = None
+    short_name: Optional[str] = None
+    division: Optional[str] = None
+    location: Optional[str] = None
 
 class Department(DepartmentBase):
     id: int
@@ -39,12 +45,22 @@ class JobTitle(JobTitleBase):
 class SupplierBase(BaseModel):
     idcode: str
     name: str
+    address: Optional[str] = None
+    telephone_no: Optional[str] = None
+    fax_no: Optional[str] = None
+    email: Optional[str] = None
+    tin_no: Optional[str] = None
 
 class SupplierCreate(SupplierBase):
     pass
 
 class SupplierUpdate(BaseModel):
     name: Optional[str] = None
+    address: Optional[str] = None
+    telephone_no: Optional[str] = None
+    fax_no: Optional[str] = None
+    email: Optional[str] = None
+    tin_no: Optional[str] = None
 
 class Supplier(SupplierBase):
     id: int

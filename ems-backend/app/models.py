@@ -11,6 +11,9 @@ class Department(Base):
     id = Column(Integer, primary_key=True, index=True)
     idcode = Column(String(4), unique=True, index=True, nullable=False)
     name = Column(String(50), nullable=False)
+    short_name = Column(String(20))
+    division = Column(String(50))
+    location = Column(String(100))
     created_at = Column(DateTime, default=datetime.utcnow)
     
     employees = relationship("Employee", back_populates="department_rel")
@@ -31,6 +34,11 @@ class Supplier(Base):
     id = Column(Integer, primary_key=True, index=True)
     idcode = Column(String(4), unique=True, index=True, nullable=False)
     name = Column(String(50), nullable=False)
+    address = Column(Text)
+    telephone_no = Column(String(20))
+    fax_no = Column(String(20))
+    email = Column(String(100))
+    tin_no = Column(String(20))
     created_at = Column(DateTime, default=datetime.utcnow)
 
 class Employee(Base):
