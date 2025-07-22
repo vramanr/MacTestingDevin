@@ -59,6 +59,29 @@ export default function EmployeeManagement() {
     }
   }
 
+  const formatDate = (dateString: string): string | undefined => {
+    if (!dateString) return undefined
+    
+    const dateMatch = dateString.match(/(\d{4})-(\d{2})-(\d{2})/)
+    if (dateMatch) {
+      const [, year, month, day] = dateMatch
+      const validYear = year.length > 4 ? year.slice(-4) : year
+      const formattedDate = `${validYear}-${month}-${day}`
+      
+      const date = new Date(formattedDate)
+      if (date.getFullYear() >= 1900 && date.getFullYear() <= 2100) {
+        return formattedDate
+      }
+    }
+    
+    const date = new Date(dateString)
+    if (!isNaN(date.getTime()) && date.getFullYear() >= 1900 && date.getFullYear() <= 2100) {
+      return date.toISOString().split('T')[0]
+    }
+    
+    return undefined
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
@@ -67,9 +90,9 @@ export default function EmployeeManagement() {
         emptype: formData.emptype ? parseInt(formData.emptype) : undefined,
         empyear: formData.empyear ? parseInt(formData.empyear) : undefined,
         empmonth: formData.empmonth ? parseInt(formData.empmonth) : undefined,
-        birthdate: formData.birthdate || undefined,
-        empstartdt: formData.empstartdt || undefined,
-        empleavedt: formData.empleavedt || undefined
+        birthdate: formatDate(formData.birthdate),
+        empstartdt: formatDate(formData.empstartdt),
+        empleavedt: formatDate(formData.empleavedt)
       }
 
       if (editingEmployee) {
@@ -83,6 +106,7 @@ export default function EmployeeManagement() {
       resetForm()
     } catch (error) {
       console.error('Error saving employee:', error)
+      alert('Failed to save employee. Please check the form data and try again.')
     }
   }
 
