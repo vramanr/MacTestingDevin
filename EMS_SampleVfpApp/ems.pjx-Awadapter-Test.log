@@ -1,0 +1,668 @@
+
+
+================================================================================
+04-23-2020 15:05 - Starting FoxInCloud Adaptation Assistant version 2.30 (copy mode) (Awadapter, test mode)
+================================================================================
+
+================================================================================
+04-23-2020 15:05 - Starting FoxInCloud Adaptation Assistant version 2.30 (copy mode) (Awadapter, test mode)
+================================================================================
+
+================================================================================
+04-23-2020 15:06 - Analysing project "ems"
+================================================================================
+
+04-23-2020 15:06 - (15) awadapter.filesdir_build_pjx(): Registering files of project 'D:\EMS_SampleVfpApp\ems.pjx'
+================================================================================
+15 file(s) registered from project 'D:\EMS_SampleVfpApp\ems.pjx' in 3.0 secs.
+(15) awadapter.filesdir_build_pjx(): Registering files of project 'D:\EMS_SampleVfpApp\ems.pjx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:06 - (16) awadapter.filesdir_testcopy(): Copying files into 'D:\Test\'
+================================================================================
+(16) awadapter.filesdir_testcopy(): Copying files into 'D:\Test\' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:06 - (7) awadapter.filessrcestrreplace(): Replacing 'D:\\(?!Test\\)' into 'D:\Test\'
+================================================================================
+15:06 - (1) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - none
+15:06 - (2) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:06 - (3) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+15:06 - (4) Replacing in 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - none
+15:06 - (5) Replacing in 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - none
+15:06 - (6) Replacing in 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg' - DONE
+15:06 - (7) Replacing in 'D:\Test\EMS_SampleVfpApp\Reports\emplist.frx' - NOT SUPPORTED
+(7) awadapter.filessrcestrreplace(): Replacing 'D:\\(?!Test\\)' into 'D:\Test\' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:06 - (7) awadapter.filessrcestrreplace(): Replacing '(\s)(\\[^\s*?<>|":]+\s)' into '$1\Test$2'
+================================================================================
+15:06 - (1) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - none
+15:06 - (2) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:06 - (3) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+15:06 - (4) Replacing in 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - none
+15:06 - (5) Replacing in 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - none
+15:06 - (6) Replacing in 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg' - none
+15:06 - (7) Replacing in 'D:\Test\EMS_SampleVfpApp\Reports\emplist.frx' - NOT SUPPORTED
+(7) awadapter.filessrcestrreplace(): Replacing '(\s)(\\[^\s*?<>|":]+\s)' into '$1\Test$2' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:06 - (6) awadapter.analyse(): Analysing classes inheritance in project "ems"
+================================================================================
+15:06 - (1) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx'
+15:06 - (2) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx'
+15:06 - (3) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx'
+15:06 - (4) Analysing 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx'
+15:06 - (5) Analysing 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx'
+15:06 - (6) Analysing 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg'
+(6) awadapter.analyse(): Analysing classes inheritance in project "ems" completed in 0 seconds (00:00:00)
+
+04-23-2020 15:06 - (7) awadapter.analyse(): Scanning code in project 'ems' for compliance with FoxInCloud
+================================================================================
+15:06 - (1) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx'
+15:06 - (2) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx'
+15:06 - (3) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx'
+15:06 - (4) Analysing 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx'
+15:06 - (5) Analysing 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx'
+15:06 - (6) Analysing 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg'
+15:06 - (7) Analysing 'D:\Test\EMS_SampleVfpApp\Reports\emplist.frx'
+(7) awadapter.analyse(): Scanning code in project 'ems' for compliance with FoxInCloud completed in 14 seconds (00:00:14)
+
+================================================================================
+04-23-2020 15:10 - Starting FoxInCloud Adaptation Assistant version 2.30 (copy mode) (Awadapter, test mode)
+================================================================================
+
+================================================================================
+04-23-2020 15:10 - Starting FoxInCloud Adaptation Assistant version 2.30 (copy mode) (Awadapter, test mode)
+================================================================================
+
+================================================================================
+04-23-2020 15:10 - Analysing project "ems"
+================================================================================
+
+04-23-2020 15:10 - (15) awadapter.filesdir_build_pjx(): Registering files of project 'D:\EMS_SampleVfpApp\ems.pjx'
+================================================================================
+15 file(s) registered from project 'D:\EMS_SampleVfpApp\ems.pjx' in 2.0 secs.
+(15) awadapter.filesdir_build_pjx(): Registering files of project 'D:\EMS_SampleVfpApp\ems.pjx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:10 - (16) awadapter.filesdir_testcopy(): Copying files into 'D:\Test\'
+================================================================================
+(16) awadapter.filesdir_testcopy(): Copying files into 'D:\Test\' completed in 1 seconds (00:00:01)
+
+04-23-2020 15:10 - (7) awadapter.filessrcestrreplace(): Replacing 'D:\\(?!Test\\)' into 'D:\Test\'
+================================================================================
+15:10 - (1) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - none
+15:10 - (2) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:10 - (3) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+15:10 - (4) Replacing in 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - none
+15:10 - (5) Replacing in 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - none
+15:10 - (6) Replacing in 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg' - DONE
+15:10 - (7) Replacing in 'D:\Test\EMS_SampleVfpApp\Reports\emplist.frx' - NOT SUPPORTED
+(7) awadapter.filessrcestrreplace(): Replacing 'D:\\(?!Test\\)' into 'D:\Test\' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:10 - (7) awadapter.filessrcestrreplace(): Replacing '(\s)(\\[^\s*?<>|":]+\s)' into '$1\Test$2'
+================================================================================
+15:10 - (1) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - none
+15:10 - (2) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:10 - (3) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+15:10 - (4) Replacing in 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - none
+15:10 - (5) Replacing in 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - none
+15:10 - (6) Replacing in 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg' - none
+15:10 - (7) Replacing in 'D:\Test\EMS_SampleVfpApp\Reports\emplist.frx' - NOT SUPPORTED
+(7) awadapter.filessrcestrreplace(): Replacing '(\s)(\\[^\s*?<>|":]+\s)' into '$1\Test$2' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:10 - (6) awadapter.analyse(): Analysing classes inheritance in project "ems"
+================================================================================
+15:10 - (1) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx'
+15:10 - (2) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx'
+15:10 - (3) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx'
+15:10 - (4) Analysing 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx'
+15:10 - (5) Analysing 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx'
+15:10 - (6) Analysing 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg'
+(6) awadapter.analyse(): Analysing classes inheritance in project "ems" completed in 0 seconds (00:00:00)
+
+04-23-2020 15:10 - (7) awadapter.analyse(): Scanning code in project 'ems' for compliance with FoxInCloud
+================================================================================
+15:10 - (1) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx'
+15:10 - (2) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx'
+15:10 - (3) Analysing 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx'
+15:10 - (4) Analysing 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx'
+15:10 - (5) Analysing 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx'
+15:10 - (6) Analysing 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg'
+15:10 - (7) Analysing 'D:\Test\EMS_SampleVfpApp\Reports\emplist.frx'
+(7) awadapter.analyse(): Scanning code in project 'ems' for compliance with FoxInCloud completed in 14 seconds (00:00:14)
+
+04-23-2020 15:11 - (15) awadapter.filesdir_build_pjx(): Registering files of project 'D:\EMS_SampleVfpApp\ems.pjx'
+================================================================================
+15 file(s) registered from project 'D:\EMS_SampleVfpApp\ems.pjx' in 2.2 secs.
+(15) awadapter.filesdir_build_pjx(): Registering files of project 'D:\EMS_SampleVfpApp\ems.pjx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:11 - (16) awadapter.filesdir_testcopy(): Copying files into 'D:\Test\'
+================================================================================
+(16) awadapter.filesdir_testcopy(): Copying files into 'D:\Test\' completed in 0 seconds (00:00:00)
+- 'd:\ems_samplevfpapp\libs\basectrl.vcx': copy file ('d:\ems_samplevfpapp\libs\basectrl.vcx') to ('D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx'): File is in use.
+
+04-23-2020 15:11 - (7) awadapter.filessrcestrreplace(): Replacing 'D:\\(?!Test\\)' into 'D:\Test\'
+================================================================================
+15:11 - (1) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - none
+15:11 - (2) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:11 - (3) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+15:11 - (4) Replacing in 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - none
+15:11 - (5) Replacing in 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg' - DONE
+15:11 - (6) Replacing in 'D:\Test\EMS_SampleVfpApp\Reports\emplist.frx' - NOT SUPPORTED
+(7) awadapter.filessrcestrreplace(): Replacing 'D:\\(?!Test\\)' into 'D:\Test\' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:11 - (7) awadapter.filessrcestrreplace(): Replacing '(\s)(\\[^\s*?<>|":]+\s)' into '$1\Test$2'
+================================================================================
+15:11 - (1) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - none
+15:11 - (2) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:11 - (3) Replacing in 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+15:11 - (4) Replacing in 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - none
+15:11 - (5) Replacing in 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg' - none
+15:11 - (6) Replacing in 'D:\Test\EMS_SampleVfpApp\Reports\emplist.frx' - NOT SUPPORTED
+(7) awadapter.filessrcestrreplace(): Replacing '(\s)(\\[^\s*?<>|":]+\s)' into '$1\Test$2' completed in 0 seconds (00:00:00)
+
+================================================================================
+04-23-2020 15:11 - Adaptating all source files of project 'ems'
+================================================================================
+Verifying supported OLE classes are installed - PDFXCviewAx.CoPDFXCview.1 KO - PDFXCviewAx.CoPDFXCpreview.1 KO - AcroPDF.PDF.1 OK - FoxitReaderOCX.FoxitReaderOCXCtrl.1 KO - Foxit.FoxitPDFSDKStdCtrl.5 KO - Foxit.FoxitPDFSDKProCtrl.5 KO - Shell.Explorer.2 OK - MSComctlLib.TreeCtrl.2 OK - MSComctlLib.ImageListCtrl.2 OK - MSComctlLib.ListViewCtrl.2 OK - MSComctlLib.Slider.2 OK - MSComctl2.MonthView.2 OK - MSComctl2.DTPicker.2 OK - RichText.RichTextCtrl.1 OK
+Copying 42 FoxInCloud public source code files into folder 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\' - 1 - ab.h: OK: ab.h: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\ab.h' (N/A GMT) - 2 - abDev.h: OK: abDev.h: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abDev.h' (N/A GMT) - 3 - abData.h: OK: abData.h: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abData.h' (N/A GMT) - 4 - abFile.h: OK: abFile.h: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abFile.h' (N/A GMT) - 5 - abOffice.h: OK: abOffice.h: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abOffice.h' (N/A GMT) - 6 - abTxt.h: OK: abTxt.h: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abTxt.h' (N/A GMT) - 7 - awPublic.h: OK: awPublic.h: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\awPublic.h' (N/A GMT) - 8 - ga_.h: OK: ga_.h: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\ga_.h' (N/A GMT) - 9 - ab.prg: OK: ab.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\ab.prg' (N/A GMT) - 10 - abArray.prg: OK: abArray.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abArray.prg' (N/A GMT) - 11 - abData.prg: OK: abData.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abData.prg' (N/A GMT) - 12 - abDate.prg: OK: abDate.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abDate.prg' (N/A GMT) - 13 - abDev.prg: OK: abDev.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abDev.prg' (N/A GMT) - 14 - abFile.prg: OK: abFile.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abFile.prg' (N/A GMT) - 15 - abGA.prg: OK: abGA.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abGA.prg' (N/A GMT) - 16 - abOffice.prg: OK: abOffice.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abOffice.prg' (N/A GMT) - 17 - abOOP.prg: OK: abOOP.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abOOP.prg' (N/A GMT) - 18 - abTxt.prg: OK: abTxt.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\abTxt.prg' (N/A GMT) - 19 - awPublic.prg: OK: awPublic.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\awPublic.prg' (N/A GMT) - 20 - aw.vct: OK: aw.vct: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\aw.vct' (08-22-2019 06:01 GMT) - 21 - aw.vcx: OK: aw.vcx: not copied because 'awCopy.vct' was not copied - 22 - awGenMenu.prg: OK: awGenMenu.prg: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\awGenMenu.prg' (N/A GMT) - 23 - european.mem: OK: european.mem: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\european.mem' (N/A GMT) - 24 - Graphics\aw.ico: OK: Graphics\aw.ico: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\aw.ico' (N/A GMT) - 25 - Graphics\indicator_remembermilk_orange.gif: OK: Graphics\indicator_remembermilk_orange.gif: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\indicator_remembermilk_orange.gif' (N/A GMT) - 26 - Graphics\exclamation64.png: OK: Graphics\exclamation64.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\exclamation64.png' (N/A GMT) - 27 - Graphics\info64.png: OK: Graphics\info64.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\info64.png' (N/A GMT) - 28 - Graphics\question64.png: OK: Graphics\question64.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\question64.png' (N/A GMT) - 29 - Graphics\standby64.png: OK: Graphics\standby64.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\standby64.png' (N/A GMT) - 30 - Graphics\folder.png: OK: Graphics\folder.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\folder.png' (N/A GMT) - 31 - Graphics\folder_image.png: OK: Graphics\folder_image.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\folder_image.png' (N/A GMT) - 32 - Graphics\folder_table.png: OK: Graphics\folder_table.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\folder_table.png' (N/A GMT) - 33 - Graphics\arrows-gray-gray.png: OK: Graphics\arrows-gray-gray.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\arrows-gray-gray.png' (N/A GMT) - 34 - Graphics\arrows-black-gray.png: OK: Graphics\arrows-black-gray.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\arrows-black-gray.png' (N/A GMT) - 35 - Graphics\arrows-gray-black.png: OK: Graphics\arrows-gray-black.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\arrows-gray-black.png' (N/A GMT) - 36 - Graphics\arrowdoubleleft.png: OK: Graphics\arrowdoubleleft.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\arrowdoubleleft.png' (N/A GMT) - 37 - Graphics\arrowdoubleright.png: OK: Graphics\arrowdoubleright.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\arrowdoubleright.png' (N/A GMT) - 38 - Graphics\refreshblue32.png: OK: Graphics\refreshblue32.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\refreshblue32.png' (N/A GMT) - 39 - Graphics\prefirst.png: OK: Graphics\prefirst.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\prefirst.png' (N/A GMT) - 40 - Graphics\prelast.png: OK: Graphics\prelast.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\prelast.png' (N/A GMT) - 41 - Graphics\preprev.png: OK: Graphics\preprev.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\preprev.png' (N/A GMT) - 42 - Graphics\prenext.png: OK: Graphics\prenext.png: not copied because older (-  -       :  :   GMT) than destination file 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\Graphics\prenext.png' (N/A GMT)
+
+04-23-2020 15:11 - (3) awadapter.prgclassessubclass(): Sub-classing FoxInCloud classes based on 'Column', 'Header' and 'Session'
+from 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\awPublic.prg'
+into 'D:\Test\EMS_SampleVfpApp\Libs\rrr.prg'
+================================================================================
+(3) awadapter.prgclassessubclass(): Sub-classing FoxInCloud classes based on 'Column', 'Header' and 'Session'
+from 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\awPublic.prg'
+into 'D:\Test\EMS_SampleVfpApp\Libs\rrr.prg' completed in 0 seconds (00:00:00)
+Result: OK
+
+04-23-2020 15:11 - (45) awadapter.vcxclassessubclass(): Sub-classing FoxInCloud 'base' classes 'aw(?!ctl)(\w{3}|ole\w+)' of 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\aw.vcx' as 'rrr$1' into 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:11 - (01) Sub-classing 'aw.vcx!awcad' as 'rrr.vcx!rrrcad'  - success
+15:11 - (02) Sub-classing 'aw.vcx!awcbo' as 'rrr.vcx!rrrcbo'  - success
+15:11 - (03) Sub-classing 'aw.vcx!awchk' as 'rrr.vcx!rrrchk'  - success
+15:11 - (04) Sub-classing 'aw.vcx!awcmd' as 'rrr.vcx!rrrcmd'  - success
+15:11 - (05) Sub-classing 'aw.vcx!awcmg' as 'rrr.vcx!rrrcmg'  - success
+15:11 - (06) Sub-classing 'aw.vcx!awcnt' as 'rrr.vcx!rrrcnt'  - success
+15:11 - (07) Sub-classing 'aw.vcx!awcol' as 'rrr.vcx!rrrcol'  - success
+15:11 - (08) Sub-classing 'aw.vcx!awcst' as 'rrr.vcx!rrrcst'  - success
+15:11 - (09) Sub-classing 'aw.vcx!awcur' as 'rrr.vcx!rrrcur'  - success
+15:11 - (10) Sub-classing 'aw.vcx!awdte' as 'rrr.vcx!rrrdte'  - success
+15:11 - (11) Sub-classing 'aw.vcx!awebx' as 'rrr.vcx!rrrebx'  - success
+15:11 - (12) Sub-classing 'aw.vcx!awfrm' as 'rrr.vcx!rrrfrm'  - success
+15:11 - (13) Sub-classing 'aw.vcx!awfrs' as 'rrr.vcx!rrrfrs'  - success
+15:11 - (14) Sub-classing 'aw.vcx!awgrd' as 'rrr.vcx!rrrgrd'  - success
+15:11 - (15) Sub-classing 'aw.vcx!awhpl' as 'rrr.vcx!rrrhpl'  - success
+15:11 - (16) Sub-classing 'aw.vcx!awimg' as 'rrr.vcx!rrrimg'  - success
+15:11 - (17) Sub-classing 'aw.vcx!awlbl' as 'rrr.vcx!rrrlbl'  - success
+15:11 - (18) Sub-classing 'aw.vcx!awlin' as 'rrr.vcx!rrrlin'  - success
+15:11 - (19) Sub-classing 'aw.vcx!awlst' as 'rrr.vcx!rrrlst'  - success
+15:11 - (20) Sub-classing 'aw.vcx!awoledtp6' as 'rrr.vcx!rrroledtp6'  - success
+15:11 - (21) Sub-classing 'aw.vcx!awoleie' as 'rrr.vcx!rrroleie'  - success
+15:11 - (22) Sub-classing 'aw.vcx!awoleiml6' as 'rrr.vcx!rrroleiml6'  - success
+15:11 - (23) Sub-classing 'aw.vcx!awolelv6' as 'rrr.vcx!rrrolelv6'  - success
+15:11 - (24) Sub-classing 'aw.vcx!awolemv6' as 'rrr.vcx!rrrolemv6'  - success
+15:11 - (25) Sub-classing 'aw.vcx!awolepdfacro' as 'rrr.vcx!rrrolepdfacro'  - acoop.fxp!Awadapter.vcxclassessubclass() - WARNING: Could not sub-class 'awolepdfacro' - Method or procedure vcxclassessubclass(): error #1426 ("OLE error code 0x80040154: Class not registered") at code line #3,216 (source code N/A) - unsupported or unregistered OLEcontrol class, PLEASE SUB-CLASS MANUALLY
+CREATE CLASS rrrolepdfacro OF "D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx" AS awolepdfacro FROM "C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\aw.vcx"
+15:11 - (26) Sub-classing 'aw.vcx!awolepdfoxit5std' as 'rrr.vcx!rrrolepdfoxit5std'  - acoop.fxp!Awadapter.vcxclassessubclass() - WARNING: Could not sub-class 'awolepdfoxit5std' - Method or procedure vcxclassessubclass(): error #1426 ("OLE error code 0x80040154: Class not registered") at code line #3,216 (source code N/A) - unsupported or unregistered OLEcontrol class, PLEASE SUB-CLASS MANUALLY
+CREATE CLASS rrrolepdfoxit5std OF "D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx" AS awolepdfoxit5std FROM "C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\aw.vcx"
+15:11 - (27) Sub-classing 'aw.vcx!awolertf6' as 'rrr.vcx!rrrolertf6'  - success
+15:11 - (28) Sub-classing 'aw.vcx!awolesld6' as 'rrr.vcx!rrrolesld6'  - success
+15:11 - (29) Sub-classing 'aw.vcx!awoletv6' as 'rrr.vcx!rrroletv6'  - success
+15:11 - (30) Sub-classing 'aw.vcx!awopg' as 'rrr.vcx!rrropg'  - success
+15:11 - (31) Sub-classing 'aw.vcx!awopt' as 'rrr.vcx!rrropt'  - success
+15:11 - (32) Sub-classing 'aw.vcx!awpag' as 'rrr.vcx!rrrpag'  - success
+15:11 - (33) Sub-classing 'aw.vcx!awpgf' as 'rrr.vcx!rrrpgf'  - success
+15:11 - (34) Sub-classing 'aw.vcx!awprj' as 'rrr.vcx!rrrprj'  - success
+15:11 - (35) Sub-classing 'aw.vcx!awrel' as 'rrr.vcx!rrrrel'  - success
+15:11 - (36) Sub-classing 'aw.vcx!awrpt' as 'rrr.vcx!rrrrpt'  - success
+15:12 - (37) Sub-classing 'aw.vcx!awsep' as 'rrr.vcx!rrrsep'  - success
+15:12 - (38) Sub-classing 'aw.vcx!awshp' as 'rrr.vcx!rrrshp'  - success
+15:12 - (39) Sub-classing 'aw.vcx!awspn' as 'rrr.vcx!rrrspn'  - success
+15:12 - (40) Sub-classing 'aw.vcx!awtbr' as 'rrr.vcx!rrrtbr'  - success
+15:12 - (41) Sub-classing 'aw.vcx!awtmr' as 'rrr.vcx!rrrtmr'  - success
+15:12 - (42) Sub-classing 'aw.vcx!awtxt' as 'rrr.vcx!rrrtxt'  - success
+15:12 - (43) Sub-classing 'aw.vcx!awxad' as 'rrr.vcx!rrrxad'  - success
+15:12 - (44) Sub-classing 'aw.vcx!awxfd' as 'rrr.vcx!rrrxfd'  - success
+15:12 - (45) Sub-classing 'aw.vcx!awxtb' as 'rrr.vcx!rrrxtb'  - success
+(45) awadapter.vcxclassessubclass(): Sub-classing FoxInCloud 'base' classes 'aw(?!ctl)(\w{3}|ole\w+)' of 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\aw.vcx' as 'rrr$1' into 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 20 seconds (00:00:20)
+
+04-23-2020 15:12 - (43) awadapter.vcxclassessubclass_memberclass(): Redirecting MemberClass in 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (01) Redirecting members in 'rrrcad' -- succes: class without .memberClass 
+15:12 - (02) Redirecting members in 'rrrcbo' -- succes: class without .memberClass 
+15:12 - (03) Redirecting members in 'rrrchk' -- succes: class without .memberClass 
+15:12 - (04) Redirecting members in 'rrrcmd' -- succes: class without .memberClass 
+15:12 - (05) Redirecting members in 'rrrcmg' -- succes: members set on class RRR.VCX!rrrcmd 
+15:12 - (06) Redirecting members in 'rrrcnt' -- succes: class without .memberClass 
+15:12 - (07) Redirecting members in 'rrrcol' -- succes: class without .memberClass 
+15:12 - (08) Redirecting members in 'rrrcst' -- succes: class without .memberClass 
+15:12 - (09) Redirecting members in 'rrrcur' -- succes: class without .memberClass 
+15:12 - (10) Redirecting members in 'rrrdte' -- succes: class without .memberClass 
+15:12 - (11) Redirecting members in 'rrrebx' -- succes: class without .memberClass 
+15:12 - (12) Redirecting members in 'rrrfrm' -- succes: class without .memberClass 
+15:12 - (13) Redirecting members in 'rrrfrs' -- succes: class without .memberClass 
+15:12 - (14) Redirecting members in 'rrrgrd' -- succes: members set on class ! instead of RRR.prg! 
+15:12 - (15) Redirecting members in 'rrrhpl' -- succes: class without .memberClass 
+15:12 - (16) Redirecting members in 'rrrimg' -- succes: class without .memberClass 
+15:12 - (17) Redirecting members in 'rrrlbl' -- succes: class without .memberClass 
+15:12 - (18) Redirecting members in 'rrrlin' -- succes: class without .memberClass 
+15:12 - (19) Redirecting members in 'rrrlst' -- succes: class without .memberClass 
+15:12 - (20) Redirecting members in 'rrroledtp6' -- succes: class without .memberClass 
+15:12 - (21) Redirecting members in 'rrroleie' -- succes: class without .memberClass 
+15:12 - (22) Redirecting members in 'rrroleiml6' -- succes: class without .memberClass 
+15:12 - (23) Redirecting members in 'rrrolelv6' -- succes: class without .memberClass 
+15:12 - (24) Redirecting members in 'rrrolemv6' -- succes: class without .memberClass 
+15:12 - (25) Redirecting members in 'rrrolertf6' -- succes: class without .memberClass 
+15:12 - (26) Redirecting members in 'rrrolesld6' -- succes: class without .memberClass 
+15:12 - (27) Redirecting members in 'rrroletv6' -- succes: class without .memberClass 
+15:12 - (28) Redirecting members in 'rrropg' -- succes: members set on class RRR.VCX!rrropt 
+15:12 - (29) Redirecting members in 'rrropt' -- succes: class without .memberClass 
+15:12 - (30) Redirecting members in 'rrrpag' -- succes: class without .memberClass 
+15:12 - (31) Redirecting members in 'rrrpgf' -- succes: members set on class RRR.VCX!rrrpag 
+15:12 - (32) Redirecting members in 'rrrprj' -- succes: class without .memberClass 
+15:12 - (33) Redirecting members in 'rrrrel' -- succes: class without .memberClass 
+15:12 - (34) Redirecting members in 'rrrrpt' -- succes: class without .memberClass 
+15:12 - (35) Redirecting members in 'rrrsep' -- succes: class without .memberClass 
+15:12 - (36) Redirecting members in 'rrrshp' -- succes: class without .memberClass 
+15:12 - (37) Redirecting members in 'rrrspn' -- succes: class without .memberClass 
+15:12 - (38) Redirecting members in 'rrrtbr' -- succes: class without .memberClass 
+15:12 - (39) Redirecting members in 'rrrtmr' -- succes: class without .memberClass 
+15:12 - (40) Redirecting members in 'rrrtxt' -- succes: class without .memberClass 
+15:12 - (41) Redirecting members in 'rrrxad' -- succes: class without .memberClass 
+15:12 - (42) Redirecting members in 'rrrxfd' -- succes: class without .memberClass 
+15:12 - (43) Redirecting members in 'rrrxtb' -- succes: class without .memberClass 
+(43) awadapter.vcxclassessubclass_memberclass(): Redirecting MemberClass in 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 12 seconds (00:00:12)
+
+04-23-2020 15:12 - (18) awadapter.vcxclassessubclass(): Sub-classing FoxInCloud 'child' classes 'aw(?:(?!ole)|(?=olepdf))(\w{4,})' of 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\aw.vcx' as 'rrr$1' into 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (01) Sub-classing 'aw.vcx!awcadlogerror' as 'rrr.vcx!rrrcadlogerror'  - success
+15:12 - (02) Sub-classing 'aw.vcx!awcboautocomp' as 'rrr.vcx!rrrcboautocomp'  - success
+15:12 - (03) Sub-classing 'aw.vcx!awcmdok' as 'rrr.vcx!rrrcmdok'  - success
+15:12 - (04) Sub-classing 'aw.vcx!awcntcarousel' as 'rrr.vcx!rrrcntcarousel'  - success
+15:12 - (05) Sub-classing 'aw.vcx!awcntgetfile' as 'rrr.vcx!rrrcntgetfile'  - success
+15:12 - (06) Sub-classing 'aw.vcx!awcntgetpict' as 'rrr.vcx!rrrcntgetpict'  - success
+15:12 - (07) Sub-classing 'aw.vcx!awcntgrdpage' as 'rrr.vcx!rrrcntgrdpage'  - success
+15:12 - (08) Sub-classing 'aw.vcx!awcolview' as 'rrr.vcx!rrrcolview'  - success
+15:12 - (09) Sub-classing 'aw.vcx!awdtelogerror' as 'rrr.vcx!rrrdtelogerror'  - success
+15:12 - (10) Sub-classing 'aw.vcx!awfrmfb' as 'rrr.vcx!rrrfrmfb'  - success
+15:12 - (11) Sub-classing 'aw.vcx!awfrmib' as 'rrr.vcx!rrrfrmib'  - success
+15:12 - (12) Sub-classing 'aw.vcx!awfrmlogerror' as 'rrr.vcx!rrrfrmlogerror'  - success
+15:12 - (13) Sub-classing 'aw.vcx!awfrmmb' as 'rrr.vcx!rrrfrmmb'  - success
+15:12 - (14) Sub-classing 'aw.vcx!awimggetfile' as 'rrr.vcx!rrrimggetfile'  - success
+15:12 - (15) Sub-classing 'aw.vcx!awimggetpict' as 'rrr.vcx!rrrimggetpict'  - success
+15:12 - (16) Sub-classing 'aw.vcx!awolepdfacro' as 'rrr.vcx!rrrolepdfacro'  - acoop.fxp!Awadapter.vcxclassessubclass() - WARNING: Could not sub-class 'awolepdfacro' - Method or procedure vcxclassessubclass(): error #1426 ("OLE error code 0x80040154: Class not registered") at code line #3,216 (source code N/A) - unsupported or unregistered OLEcontrol class, PLEASE SUB-CLASS MANUALLY
+CREATE CLASS rrrolepdfacro OF "D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx" AS awolepdfacro FROM "C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\aw.vcx"
+15:12 - (17) Sub-classing 'aw.vcx!awolepdfoxit5std' as 'rrr.vcx!rrrolepdfoxit5std'  - acoop.fxp!Awadapter.vcxclassessubclass() - WARNING: Could not sub-class 'awolepdfoxit5std' - Method or procedure vcxclassessubclass(): error #1426 ("OLE error code 0x80040154: Class not registered") at code line #3,216 (source code N/A) - unsupported or unregistered OLEcontrol class, PLEASE SUB-CLASS MANUALLY
+CREATE CLASS rrrolepdfoxit5std OF "D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx" AS awolepdfoxit5std FROM "C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\aw.vcx"
+15:12 - (18) Sub-classing 'aw.vcx!awtmranimation' as 'rrr.vcx!rrrtmranimation'  - success
+(18) awadapter.vcxclassessubclass(): Sub-classing FoxInCloud 'child' classes 'aw(?:(?!ole)|(?=olepdf))(\w{4,})' of 'C:\Program Files (x86)\Microsoft Visual FoxPro 9\Tools\AB\aw.vcx' as 'rrr$1' into 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 26 seconds (00:00:26)
+
+04-23-2020 15:12 - (16) awadapter.vcxclassessubclass_memberclass(): Redirecting MemberClass in 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (01) Redirecting members in 'rrrcadlogerror' -- succes: class without .memberClass 
+15:12 - (02) Redirecting members in 'rrrcboautocomp' -- succes: class without .memberClass 
+15:12 - (03) Redirecting members in 'rrrcmdok' -- succes: class without .memberClass 
+15:12 - (04) Redirecting members in 'rrrcntcarousel' -- succes: class without .memberClass 
+15:12 - (05) Redirecting members in 'rrrcntgetfile' -- succes: class without .memberClass 
+15:12 - (06) Redirecting members in 'rrrcntgetpict' -- succes: class without .memberClass 
+15:12 - (07) Redirecting members in 'rrrcntgrdpage' -- succes: class without .memberClass 
+15:12 - (08) Redirecting members in 'rrrcolview' -- succes: class without .memberClass 
+15:12 - (09) Redirecting members in 'rrrdtelogerror' -- succes: class without .memberClass 
+15:12 - (10) Redirecting members in 'rrrfrmfb' -- succes: class without .memberClass 
+15:12 - (11) Redirecting members in 'rrrfrmib' -- succes: class without .memberClass 
+15:12 - (12) Redirecting members in 'rrrfrmlogerror' -- succes: class without .memberClass 
+15:12 - (13) Redirecting members in 'rrrfrmmb' -- succes: class without .memberClass 
+15:12 - (14) Redirecting members in 'rrrimggetfile' -- succes: class without .memberClass 
+15:12 - (15) Redirecting members in 'rrrimggetpict' -- succes: class without .memberClass 
+15:12 - (16) Redirecting members in 'rrrtmranimation' -- succes: class without .memberClass 
+(16) awadapter.vcxclassessubclass_memberclass(): Redirecting MemberClass in 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:12 - Replacing native base classes by classes of library 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+----------------------------------------------------------------------
+
+04-23-2020 15:12 - (2) awadapter.filesclassdefupdate(): 1/43 - Replacing native class 'Checkbox' by class 'rrrchk' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - MODIFIED
+15:12 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(2) awadapter.filesclassdefupdate(): 1/43 - Replacing native class 'Checkbox' by class 'rrrchk' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:12 - (3) awadapter.filesclassdefupdate(): 3/43 - Replacing native class 'Combobox' by class 'rrrcbo' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - MODIFIED
+15:12 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:12 - (3) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(3) awadapter.filesclassdefupdate(): 3/43 - Replacing native class 'Combobox' by class 'rrrcbo' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:12 - (4) awadapter.filesclassdefupdate(): 4/43 - Replacing native class 'Commandbutton' by class 'rrrcmd' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - MODIFIED
+15:12 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - MODIFIED
+15:12 - (3) Updating 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+15:12 - (4) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(4) awadapter.filesclassdefupdate(): 4/43 - Replacing native class 'Commandbutton' by class 'rrrcmd' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:12 - (1) awadapter.filesclassdefupdate(): 5/43 - Replacing native class 'Commandgroup' by class 'rrrcmg' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(1) awadapter.filesclassdefupdate(): 5/43 - Replacing native class 'Commandgroup' by class 'rrrcmg' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:12 - (2) awadapter.filesclassdefupdate(): 6/43 - Replacing native class 'Container' by class 'rrrcnt' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - MODIFIED
+15:12 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(2) awadapter.filesclassdefupdate(): 6/43 - Replacing native class 'Container' by class 'rrrcnt' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:12 - (3) awadapter.filesclassdefupdate(): 7/43 - Replacing native class 'Cursor' by class 'rrrcur' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - MODIFIED
+15:12 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:12 - (3) Updating 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+(3) awadapter.filesclassdefupdate(): 7/43 - Replacing native class 'Cursor' by class 'rrrcur' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:12 - (3) awadapter.filesclassdefupdate(): 10/43 - Replacing native class 'Dataenvironment' by class 'rrrdte' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - none
+15:12 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:12 - (3) Updating 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+(3) awadapter.filesclassdefupdate(): 10/43 - Replacing native class 'Dataenvironment' by class 'rrrdte' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:12 - (2) awadapter.filesclassdefupdate(): 11/43 - Replacing native class 'Editbox' by class 'rrrebx' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - MODIFIED
+15:12 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(2) awadapter.filesclassdefupdate(): 11/43 - Replacing native class 'Editbox' by class 'rrrebx' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:12 - (4) awadapter.filesclassdefupdate(): 12/43 - Replacing native class 'Form' by class 'rrrfrm' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:12 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - MODIFIED
+15:13 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:13 - (3) Updating 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - MODIFIED
+15:13 - (4) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(4) awadapter.filesclassdefupdate(): 12/43 - Replacing native class 'Form' by class 'rrrfrm' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 1 seconds (00:00:01)
+
+04-23-2020 15:13 - (2) awadapter.filesclassdefupdate(): 14/43 - Replacing native class 'Grid' by class 'rrrgrd' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:13 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(2) awadapter.filesclassdefupdate(): 14/43 - Replacing native class 'Grid' by class 'rrrgrd' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (1) awadapter.filesclassdefupdate(): 16/43 - Replacing native class 'Image' by class 'rrrimg' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(1) awadapter.filesclassdefupdate(): 16/43 - Replacing native class 'Image' by class 'rrrimg' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (5) awadapter.filesclassdefupdate(): 17/43 - Replacing native class 'Label' by class 'rrrlbl' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - none
+15:13 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:13 - (3) Updating 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+15:13 - (4) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+15:13 - (5) Updating 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - MODIFIED
+(5) awadapter.filesclassdefupdate(): 17/43 - Replacing native class 'Label' by class 'rrrlbl' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (2) awadapter.filesclassdefupdate(): 19/43 - Replacing native class 'Listbox' by class 'rrrlst' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+15:13 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(2) awadapter.filesclassdefupdate(): 19/43 - Replacing native class 'Listbox' by class 'rrrlst' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (2) awadapter.filesclassdefupdate(): 28/43 - Replacing native class 'Optionbutton' by class 'rrropt' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - none
+15:13 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - none
+(2) awadapter.filesclassdefupdate(): 28/43 - Replacing native class 'Optionbutton' by class 'rrropt' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (2) awadapter.filesclassdefupdate(): 29/43 - Replacing native class 'Optiongroup' by class 'rrropg' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - MODIFIED
+15:13 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(2) awadapter.filesclassdefupdate(): 29/43 - Replacing native class 'Optiongroup' by class 'rrropg' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (1) awadapter.filesclassdefupdate(): 30/43 - Replacing native class 'Page' by class 'rrrpag' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - none
+(1) awadapter.filesclassdefupdate(): 30/43 - Replacing native class 'Page' by class 'rrrpag' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (1) awadapter.filesclassdefupdate(): 31/43 - Replacing native class 'Pageframe' by class 'rrrpgf' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(1) awadapter.filesclassdefupdate(): 31/43 - Replacing native class 'Pageframe' by class 'rrrpgf' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (1) awadapter.filesclassdefupdate(): 35/43 - Replacing native class 'Separator' by class 'rrrsep' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(1) awadapter.filesclassdefupdate(): 35/43 - Replacing native class 'Separator' by class 'rrrsep' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (3) awadapter.filesclassdefupdate(): 36/43 - Replacing native class 'Shape' by class 'rrrshp' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - none
+15:13 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - none
+15:13 - (3) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(3) awadapter.filesclassdefupdate(): 36/43 - Replacing native class 'Shape' by class 'rrrshp' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (2) awadapter.filesclassdefupdate(): 37/43 - Replacing native class 'Spinner' by class 'rrrspn' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - MODIFIED
+15:13 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(2) awadapter.filesclassdefupdate(): 37/43 - Replacing native class 'Spinner' by class 'rrrspn' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (4) awadapter.filesclassdefupdate(): 38/43 - Replacing native class 'Textbox' by class 'rrrtxt' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - MODIFIED
+15:13 - (2) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - MODIFIED
+15:13 - (3) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+15:13 - (4) Updating 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - MODIFIED
+(4) awadapter.filesclassdefupdate(): 38/43 - Replacing native class 'Textbox' by class 'rrrtxt' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 1 seconds (00:00:01)
+
+04-23-2020 15:13 - (1) awadapter.filesclassdefupdate(): 39/43 - Replacing native class 'Timer' by class 'rrrtmr' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(1) awadapter.filesclassdefupdate(): 39/43 - Replacing native class 'Timer' by class 'rrrtmr' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (1) awadapter.filesclassdefupdate(): 40/43 - Replacing native class 'Toolbar' by class 'rrrtbr' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - MODIFIED
+(1) awadapter.filesclassdefupdate(): 40/43 - Replacing native class 'Toolbar' by class 'rrrtbr' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.vcx' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - Replacing native base classes by classes of library 'D:\Test\EMS_SampleVfpApp\Libs\rrr.prg'
+----------------------------------------------------------------------
+
+04-23-2020 15:13 - (1) awadapter.filesclassdefupdate(): 1/3 - Replacing native class 'Column' by class 'rrrgrc' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.prg'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - NOT SUPPORTED
+(1) awadapter.filesclassdefupdate(): 1/3 - Replacing native class 'Column' by class 'rrrgrc' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.prg' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (1) awadapter.filesclassdefupdate(): 2/3 - Replacing native class 'Header' by class 'rrrgrh' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.prg'
+================================================================================
+15:13 - (1) Updating 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - NOT SUPPORTED
+(1) awadapter.filesclassdefupdate(): 2/3 - Replacing native class 'Header' by class 'rrrgrh' of 'D:\Test\EMS_SampleVfpApp\Libs\rrr.prg' completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (1) awadapter.adapt_classes(): Adapting standalone procedures
+================================================================================ - Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg' - DONE
+(1) awadapter.adapt_classes(): Adapting standalone procedures completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (7) awadapter.adapt_classes(): 1/25 - Adapting objects and classes based on 'rrrfrm' (Form)
+================================================================================ - rrrfrm (rrrfrm ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee (employee ) DONE
+15:13 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - GETLIST (GETLIST ) DONE
+15:13 - (3) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - myform (myform ) none
+15:13 - (4) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch (empsrch ) DONE
+(7) awadapter.adapt_classes(): 1/25 - Adapting objects and classes based on 'rrrfrm' (Form) completed in 2 seconds (00:00:02)
+
+04-23-2020 15:13 - (5) awadapter.adapt_classes(): 2/25 - Adapting objects and classes based on 'rrrchk' (Checkbox)
+================================================================================ - rrrchk (rrrchk ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.chkmem1 (employee.chkmem1 ) none - employee.chkmem2 (employee.chkmem2 ) none - employee.chkmem3 (employee.chkmem3 ) none
+15:13 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - mychkboxg (mychkboxg ) none - mychkboxs (mychkboxs ) DONE
+15:13 - (3) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - prntoptn.chkdialog (prntoptn.chkdialog ) DONE - prntoptn.chkpreview (prntoptn.chkpreview ) DONE
+(5) awadapter.adapt_classes(): 2/25 - Adapting objects and classes based on 'rrrchk' (Checkbox) completed in 1 seconds (00:00:01)
+
+04-23-2020 15:13 - (2) awadapter.adapt_classes(): 3/25 - Adapting objects and classes based on 'rrrGrc' (Column)
+================================================================================ - rrrGrc (rrrGrc ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.empgrid.Column1 (empsrch.empgrid.Column1 ) none - empsrch.empgrid.Column2 (empsrch.empgrid.Column2 ) none - empsrch.empgrid.Column3 (empsrch.empgrid.Column3 ) none - empsrch.empgrid.Column4 (empsrch.empgrid.Column4 ) none
+(2) awadapter.adapt_classes(): 3/25 - Adapting objects and classes based on 'rrrGrc' (Column) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (5) awadapter.adapt_classes(): 4/25 - Adapting objects and classes based on 'rrrcbo' (Combobox)
+================================================================================ - rrrcbo (rrrcbo ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.ddlDepartment (employee.ddlDepartment ) DONE - employee.ddlEmptype (employee.ddlEmptype ) DONE
+15:13 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - mycombo (mycombo ) DONE - mydroplist (mydroplist ) DONE
+15:13 - (3) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.drprtype (empsrch.drprtype ) none
+(5) awadapter.adapt_classes(): 4/25 - Adapting objects and classes based on 'rrrcbo' (Combobox) completed in 1 seconds (00:00:01)
+
+04-23-2020 15:13 - (9) awadapter.adapt_classes(): 5/25 - Adapting objects and classes based on 'rrrcmd' (Commandbutton)
+================================================================================ - rrrcmd (rrrcmd ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.cmdAdd (employee.cmdAdd ) DONE - employee.cmdDelete (employee.cmdDelete ) DONE - employee.cmdEdit (employee.cmdEdit ) DONE - employee.cmdExit (employee.cmdExit ) DONE - employee.cmdReset (employee.cmdReset ) DONE - employee.cmdSave (employee.cmdSave ) DONE
+15:13 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.Command1 (empsrch.Command1 ) DONE - empsrch.cmdprint (empsrch.cmdprint ) DONE
+15:13 - (3) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - mycommand (mycommand ) none
+15:13 - (4) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.cmdFindTitle (employee.cmdFindTitle ) DONE
+15:13 - (5) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.cmdlaunch (empsrch.cmdlaunch ) DONE - empsrch.cmdquery (empsrch.cmdquery ) DONE - empsrch.cmdreset (empsrch.cmdreset ) DONE
+15:13 - (6) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - GETLIST.cmdcancel (GETLIST.cmdcancel ) DONE - GETLIST.cmdselect (GETLIST.cmdselect ) DONE - tbar.cmdprint (tbar.cmdprint ) none
+(9) awadapter.adapt_classes(): 5/25 - Adapting objects and classes based on 'rrrcmd' (Commandbutton) completed in 4 seconds (00:00:04)
+
+04-23-2020 15:13 - (2) awadapter.adapt_classes(): 6/25 - Adapting objects and classes based on 'rrrcmg' (Commandgroup)
+================================================================================ - rrrcmg (rrrcmg ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - mycommgrp (mycommgrp ) none
+(2) awadapter.adapt_classes(): 6/25 - Adapting objects and classes based on 'rrrcmg' (Commandgroup) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (4) awadapter.adapt_classes(): 7/25 - Adapting objects and classes based on 'rrrcnt' (Container)
+================================================================================ - rrrcnt (rrrcnt ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.Container1 (employee.Container1 ) none - employee.Container2 (employee.Container2 ) none - employee.Container3 (employee.Container3 ) none - employee.Container4 (employee.Container4 ) none - employee.Container5 (employee.Container5 ) none
+15:13 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - mycontainer (mycontainer ) none - prntoptn (prntoptn ) none
+(4) awadapter.adapt_classes(): 7/25 - Adapting objects and classes based on 'rrrcnt' (Container) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (6) awadapter.adapt_classes(): 8/25 - Adapting objects and classes based on 'rrrcur' (Cursor)
+================================================================================ - rrrcur (rrrcur ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - Dataenvironment.CURSOR1 (Dataenvironment.CURSOR1 ) none
+15:13 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - Dataenvironment.CURSOR1 (Dataenvironment.CURSOR1 ) none
+15:13 - (3) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - Dataenvironment.CURSOR1 (Dataenvironment.CURSOR1 ) none
+(6) awadapter.adapt_classes(): 8/25 - Adapting objects and classes based on 'rrrcur' (Cursor) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (6) awadapter.adapt_classes(): 9/25 - Adapting objects and classes based on 'rrrdte' (Dataenvironment)
+================================================================================ - rrrdte (rrrdte ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - Dataenvironment (Dataenvironment ) none
+15:13 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - Dataenvironment (Dataenvironment ) none
+15:13 - (3) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - Dataenvironment (Dataenvironment ) none
+(6) awadapter.adapt_classes(): 9/25 - Adapting objects and classes based on 'rrrdte' (Dataenvironment) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (4) awadapter.adapt_classes(): 10/25 - Adapting objects and classes based on 'rrrebx' (Editbox)
+================================================================================ - rrrebx (rrrebx ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.edAddress (employee.edAddress ) none
+15:13 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - myedit (myedit ) DONE
+(4) awadapter.adapt_classes(): 10/25 - Adapting objects and classes based on 'rrrebx' (Editbox) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (3) awadapter.adapt_classes(): 11/25 - Adapting objects and classes based on 'rrrgrd' (Grid)
+================================================================================ - rrrgrd (rrrgrd ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - mygrid (mygrid ) none
+15:13 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.empgrid (empsrch.empgrid ) DONE
+(3) awadapter.adapt_classes(): 11/25 - Adapting objects and classes based on 'rrrgrd' (Grid) completed in 1 seconds (00:00:01)
+
+04-23-2020 15:13 - (2) awadapter.adapt_classes(): 12/25 - Adapting objects and classes based on 'rrrGrh' (Header)
+================================================================================ - rrrGrh (rrrGrh ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.empgrid.Column1.Header1 (empsrch.empgrid.Column1.Header1 ) none - empsrch.empgrid.Column2.Header1 (empsrch.empgrid.Column2.Header1 ) none - empsrch.empgrid.Column3.Header1 (empsrch.empgrid.Column3.Header1 ) none - empsrch.empgrid.Column4.Header1 (empsrch.empgrid.Column4.Header1 ) none
+(2) awadapter.adapt_classes(): 12/25 - Adapting objects and classes based on 'rrrGrh' (Header) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (2) awadapter.adapt_classes(): 13/25 - Adapting objects and classes based on 'rrrimg' (Image)
+================================================================================ - rrrimg (rrrimg ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - myimage (myimage ) none
+(2) awadapter.adapt_classes(): 13/25 - Adapting objects and classes based on 'rrrimg' (Image) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:13 - (7) awadapter.adapt_classes(): 14/25 - Adapting objects and classes based on 'rrrlbl' (Label)
+================================================================================ - rrrlbl (rrrlbl ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - displabel (displabel ) none - ldocker (ldocker ) DONE - mylabel (mylabel ) DONE
+15:13 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.Mylabel1 (empsrch.Mylabel1 ) none - empsrch.Mylabel3 (empsrch.Mylabel3 ) none - empsrch.Mylabel4 (empsrch.Mylabel4 ) none - empsrch.Mylabel5 (empsrch.Mylabel5 ) none - empsrch.lbl1 (empsrch.lbl1 ) none - empsrch.lbl100 (empsrch.lbl100 ) none - empsrch.lbl2 (empsrch.lbl2 ) none - empsrch.lbl3 (empsrch.lbl3 ) none - rdocker (rdocker ) DONE - secnlbl (secnlbl ) none
+15:13 - (3) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - GETLIST.hdrlbl (GETLIST.hdrlbl ) none
+15:13 - (4) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - mylabel (mylabel ) none
+15:13 - (5) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.Mylabel1 (employee.Mylabel1 ) none - employee.Mylabel10 (employee.Mylabel10 ) none - employee.Mylabel11 (employee.Mylabel11 ) none - employee.Mylabel12 (employee.Mylabel12 ) none - employee.Mylabel13 (employee.Mylabel13 ) none - employee.Mylabel14 (employee.Mylabel14 ) none - employee.Mylabel15 (employee.Mylabel15 ) none - employee.Mylabel16 (employee.Mylabel16 ) none - employee.Mylabel17 (employee.Mylabel17 ) none - employee.Mylabel18 (employee.Mylabel18 ) none - employee.Mylabel19 (employee.Mylabel19 ) none - employee.Mylabel2 (employee.Mylabel2 ) none - employee.Mylabel3 (employee.Mylabel3 ) none - employee.Mylabel4 (employee.Mylabel4 ) none - employee.Mylabel5 (employee.Mylabel5 ) none - employee.Mylabel6 (employee.Mylabel6 ) none - employee.Mylabel7 (employee.Mylabel7 ) none - employee.Mylabel8 (employee.Mylabel8 ) none - employee.Mylabel9 (employee.Mylabel9 ) none - employee.dspEmpType (employee.dspEmpType ) none - employee.dspdepartment (employee.dspdepartment ) none
+(7) awadapter.adapt_classes(): 14/25 - Adapting objects and classes based on 'rrrlbl' (Label) completed in 4 seconds (00:00:04)
+
+04-23-2020 15:13 - (3) awadapter.adapt_classes(): 15/25 - Adapting objects and classes based on 'rrrlst' (Listbox)
+================================================================================ - rrrlst (rrrlst ) Ignored
+15:13 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - mylist (mylist ) none
+15:14 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - GETLIST.lstselect (GETLIST.lstselect ) DONE
+(3) awadapter.adapt_classes(): 15/25 - Adapting objects and classes based on 'rrrlst' (Listbox) completed in 1 seconds (00:00:01)
+
+04-23-2020 15:14 - (4) awadapter.adapt_classes(): 16/25 - Adapting objects and classes based on 'rrropt' (Optionbutton)
+================================================================================ - rrropt (rrropt ) Ignored
+15:14 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.optnEmpStatus.Option1 (employee.optnEmpStatus.Option1 ) none - employee.optnEmpStatus.Option2 (employee.optnEmpStatus.Option2 ) none - employee.optnSex.Option1 (employee.optnSex.Option1 ) none - employee.optnSex.Option2 (employee.optnSex.Option2 ) none
+15:14 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - myoptngrp.Option1 (myoptngrp.Option1 ) DONE - myoptngrp.Option2 (myoptngrp.Option2 ) DONE - tbar.optnrtype.Option1 (tbar.optnrtype.Option1 ) none - tbar.optnrtype.Option2 (tbar.optnrtype.Option2 ) none
+(4) awadapter.adapt_classes(): 16/25 - Adapting objects and classes based on 'rrropt' (Optionbutton) completed in 1 seconds (00:00:01)
+
+04-23-2020 15:14 - (5) awadapter.adapt_classes(): 17/25 - Adapting objects and classes based on 'rrropg' (Optiongroup)
+================================================================================ - rrropg (rrropg ) Ignored
+15:14 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.optnEmpStatus (employee.optnEmpStatus ) none - employee.optnSex (employee.optnSex ) none
+15:14 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - myoptngrp (myoptngrp ) none
+15:14 - (3) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - tbar.optnrtype (tbar.optnrtype ) none
+(5) awadapter.adapt_classes(): 17/25 - Adapting objects and classes based on 'rrropg' (Optiongroup) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:14 - (2) awadapter.adapt_classes(): 18/25 - Adapting objects and classes based on 'rrrpag' (Page)
+================================================================================ - rrrpag (rrrpag ) Ignored
+15:14 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - mypgframe.Page1 (mypgframe.Page1 ) none - mypgframe.Page2 (mypgframe.Page2 ) none
+(2) awadapter.adapt_classes(): 18/25 - Adapting objects and classes based on 'rrrpag' (Page) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:14 - (2) awadapter.adapt_classes(): 19/25 - Adapting objects and classes based on 'rrrpgf' (Pageframe)
+================================================================================ - rrrpgf (rrrpgf ) Ignored
+15:14 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - mypgframe (mypgframe ) none
+(2) awadapter.adapt_classes(): 19/25 - Adapting objects and classes based on 'rrrpgf' (Pageframe) completed in 1 seconds (00:00:01)
+
+04-23-2020 15:14 - (2) awadapter.adapt_classes(): 20/25 - Adapting objects and classes based on 'rrrsep' (Separator)
+================================================================================ - rrrsep (rrrsep ) Ignored
+15:14 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - tbar.Separator2 (tbar.Separator2 ) none - tbar.vsep (tbar.vsep ) none
+(2) awadapter.adapt_classes(): 20/25 - Adapting objects and classes based on 'rrrsep' (Separator) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:14 - (5) awadapter.adapt_classes(): 21/25 - Adapting objects and classes based on 'rrrshp' (Shape)
+================================================================================ - rrrshp (rrrshp ) Ignored
+15:14 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - myframbox (myframbox ) none
+15:14 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.box1 (empsrch.box1 ) none - empsrch.box2 (empsrch.box2 ) none
+15:14 - (3) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - GETLIST.box2 (GETLIST.box2 ) none - myline (myline ) none
+15:14 - (4) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.line1 (empsrch.line1 ) none
+(5) awadapter.adapt_classes(): 21/25 - Adapting objects and classes based on 'rrrshp' (Shape) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:14 - (4) awadapter.adapt_classes(): 22/25 - Adapting objects and classes based on 'rrrspn' (Spinner)
+================================================================================ - rrrspn (rrrspn ) Ignored
+15:14 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.spnMnth (employee.spnMnth ) none - employee.spnYr (employee.spnYr ) none
+15:14 - (2) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - myspinner (myspinner ) none
+(4) awadapter.adapt_classes(): 22/25 - Adapting objects and classes based on 'rrrspn' (Spinner) completed in 1 seconds (00:00:01)
+
+04-23-2020 15:14 - (13) awadapter.adapt_classes(): 23/25 - Adapting objects and classes based on 'rrrtxt' (Textbox)
+================================================================================ - rrrtxt (rrrtxt ) Ignored
+15:14 - (01) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.txtEmpID (employee.txtEmpID ) none - employee.txtJobTitle (employee.txtJobTitle ) none - employee.txtWorkEmail (employee.txtWorkEmail ) DONE
+15:14 - (02) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.empgrid.Column1.Text1 (empsrch.empgrid.Column1.Text1 ) DONE - empsrch.empgrid.Column2.Text1 (empsrch.empgrid.Column2.Text1 ) DONE - empsrch.empgrid.Column3.Text1 (empsrch.empgrid.Column3.Text1 ) DONE - empsrch.empgrid.Column4.Text1 (empsrch.empgrid.Column4.Text1 ) DONE
+15:14 - (03) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - disptext (disptext ) DONE - dsptotal (dsptotal ) DONE - mytext (mytext ) DONE
+15:14 - (04) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - empsrch.txtEmpId (empsrch.txtEmpId ) none - empsrch.txtfname (empsrch.txtfname ) none - empsrch.txtlname (empsrch.txtlname ) none - empsrch.txtrecs (empsrch.txtrecs ) DONE - empsrch.txtremarks (empsrch.txtremarks ) DONE
+15:14 - (05) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - tbar.txtnumber (tbar.txtnumber ) none - txtcalc (txtcalc ) DONE - txtphone (txtphone ) DONE
+15:14 - (06) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - datetextbox (datetextbox ) none
+15:14 - (07) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.txtBirthDate (employee.txtBirthDate ) none - employee.txtEmpLeaveDate (employee.txtEmpLeaveDate ) none - employee.txtEmpStartDate (employee.txtEmpStartDate ) none - nametextbox (nametextbox ) none
+15:14 - (08) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.txtFName (employee.txtFName ) none - employee.txtLName (employee.txtLName ) none - numbertextbox (numbertextbox ) none
+15:14 - (09) Adapting 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - employee.txtWorkPhone (employee.txtWorkPhone ) DONE - employee.txtworkextn (employee.txtworkextn ) none
+(13) awadapter.adapt_classes(): 23/25 - Adapting objects and classes based on 'rrrtxt' (Textbox) completed in 4 seconds (00:00:04)
+
+04-23-2020 15:14 - (2) awadapter.adapt_classes(): 24/25 - Adapting objects and classes based on 'rrrtmr' (Timer)
+================================================================================ - rrrtmr (rrrtmr ) Ignored
+15:14 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - mytimer (mytimer ) none
+(2) awadapter.adapt_classes(): 24/25 - Adapting objects and classes based on 'rrrtmr' (Timer) completed in 1 seconds (00:00:01)
+
+04-23-2020 15:14 - (2) awadapter.adapt_classes(): 25/25 - Adapting objects and classes based on 'rrrtbr' (Toolbar)
+================================================================================ - rrrtbr (rrrtbr ) Ignored
+15:14 - (1) Adapting 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - tbar (tbar ) none
+(2) awadapter.adapt_classes(): 25/25 - Adapting objects and classes based on 'rrrtbr' (Toolbar) completed in 0 seconds (00:00:00)
+
+04-23-2020 15:14 - (6) awadapter.filescompile(): Compiling modified files
+================================================================================
+15:14 - (1) Compiling 'D:\Test\EMS_SampleVfpApp\Prgs\start.prg' - SUCCESS
+15:14 - (2) Compiling 'D:\Test\EMS_SampleVfpApp\Libs\custom.vcx' - SUCCESS
+15:14 - (3) Compiling 'D:\Test\EMS_SampleVfpApp\Libs\basectrl.vcx' - SUCCESS
+15:14 - (4) Compiling 'D:\Test\EMS_SampleVfpApp\Forms\getlist.scx' - SUCCESS
+15:14 - (5) Compiling 'D:\Test\EMS_SampleVfpApp\Forms\empsearch.scx' - SUCCESS
+15:14 - (6) Compiling 'D:\Test\EMS_SampleVfpApp\Forms\employee.scx' - SUCCESS
+(6) awadapter.filescompile(): Compiling modified files completed in 0 seconds (00:00:00)
+
+================================================================================
+04-23-2020 15:14 - Completed adaptation of project 'ems' with warning : Some FoxInCloud base classes ("awOLEPDFxc","awOLEPDFxcp","awOLEPDFoxit","awOLEPDFoxit5","awOLEPDFoxit5pro") can't be subclassed because the following OLE classes are not installed in your system:
+
+PDFxChange Viewer free (http://www.tracker-software.com/)
+PDFxChange Previewer free (http://www.tracker-software.com/)
+Foxit PDF Viewer free (http://www.foxitsoftware.com/)
+Foxit PDF ActiveX Standard free (https://developers.foxitsoftware.com/pdf-sdk/download/)
+Foxit PDF ActiveX Professional free (https://developers.foxitsoftware.com/pdf-sdk/download/)
+
+This has no importance as long as your application does not use these OLE classes
+0 files (0 kb) copied in 0.050 sec.
+================================================================================

@@ -1,0 +1,1738 @@
+**************************************************
+*-- Report:   lg_anlieferung_detail_abladeliste  {D:\WWS_WIZARDS\LG_ANLIEFERUNG_DETAIL_ABLADELISTE.FRX}
+*   [Positions giving in Pixels]
+**************************************************
+
+REPORT FORM lg_anlieferung_detail_abladeliste
+
+   LeftMargin = 0.0000
+   Width = -0.0096
+   FontName = Courier New
+   FontSize = 10
+
+   *-- REPORT BAND
+   Band = PageHeader
+   Height = 356.0064
+
+      *-- Label
+      caption = "Anlieferung:"
+      top = 240
+      left = 36
+      height = 16
+      width = 78
+      position = Float
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Spedition:"
+      top = 257
+      left = 36
+      height = 16
+      width = 65
+      position = Float
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Laden am:"
+      top = 296
+      left = 36
+      height = 16
+      width = 68
+      position = Float
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Geplante Ankunft:"
+      top = 314
+      left = 36
+      height = 16
+      width = 114
+      position = Float
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "LKW/Container:"
+      top = 334
+      left = 36
+      height = 16
+      width = 100
+      printwhen = not empty(anlieferungen.container)
+      reprint = detailoverflow
+      reprint = [name+interne_logistik_text] changes
+      position = Float
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Shape
+      curvature = 0
+      stretch = Heightofband
+      top = 231
+      left = 26
+      height = 125
+      width = 489
+      reprint = detailoverflow
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- TextBox
+      expr = "ABLADELISTE"+chr(13)+"Anlieferung "+ALLTRIM(anlieferungen.anlieferung)
+      inputmask = 
+      type = C
+      Align = Left
+      top = 156
+      left = 36
+      height = 60
+      width = 602
+      reprint = detailoverflow
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 18
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- TextBox
+      expr = ALLTRIM(anlieferungen.anlieferung)
+      inputmask = 
+      type = C
+      Align = Left
+      top = 239
+      left = 159
+      height = 18
+      width = 358
+      reprint = detailoverflow
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- TextBox
+      expr = "Ihr Ansprechpartner"
+      inputmask = 
+      type = C
+      Align = Left
+      top = 241
+      left = 557
+      height = 16
+      width = 177
+      removeblanks = .T.
+      printwhen = _pageno=1
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- TextBox
+      expr = alltrim(anlieferungen.spedition)
+      inputmask = 
+      type = C
+      Align = Left
+      top = 256
+      left = 159
+      height = 18
+      width = 358
+      reprint = detailoverflow
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- TextBox
+      expr = mess.bearb
+      inputmask = 
+      type = C
+      Align = Left
+      top = 256
+      left = 557
+      height = 16
+      width = 177
+      removeblanks = .T.
+      printwhen = _pageno=1
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = "Telefon: "
+      inputmask = 
+      type = C
+      Align = Left
+      top = 271
+      left = 557
+      height = 16
+      width = 50
+      removeblanks = .T.
+      printwhen = _pageno=1 and not empty(alltrim(mess.durchwahl))
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = alltrim(mess.durchwahl)
+      inputmask = 
+      type = C
+      Align = Left
+      top = 271
+      left = 604
+      height = 16
+      width = 130
+      removeblanks = .T.
+      printwhen = _pageno=1
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = alltrim(alltrim(anlieferungen.containertyp)+" "+alltrim(anlieferungen.kennzeichen))
+      inputmask = 
+      type = C
+      Align = Left
+      top = 273
+      left = 159
+      height = 18
+      width = 358
+      reprint = detailoverflow
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- TextBox
+      expr = "Fax: "
+      inputmask = 
+      type = C
+      Align = Left
+      top = 286
+      left = 557
+      height = 16
+      width = 50
+      removeblanks = .T.
+      printwhen = _pageno=1 and not empty(mess2.fax_durchwahl)
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = alltrim(mess2.fax_durchwahl)
+      inputmask = 
+      type = C
+      Align = Left
+      top = 286
+      left = 604
+      height = 16
+      width = 130
+      removeblanks = .T.
+      printwhen = _pageno=1 and not empty(mess2.fax_durchwahl)
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = anlieferungen.laden
+      inputmask = 
+      type = C
+      Align = Left
+      top = 295
+      left = 159
+      height = 18
+      width = 300
+      reprint = detailoverflow
+      position = Top
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- TextBox
+      expr = mess.emailadresse
+      inputmask = 
+      type = C
+      Align = Left
+      top = 301
+      left = 557
+      height = 16
+      width = 177
+      removeblanks = .T.
+      printwhen = _pageno=1 and not empty(mess.emailadresse)
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = dtoc(anlieferungen.ankunft)+" "+anlieferungen.ankunft_uhr
+      inputmask = 
+      type = C
+      Align = Left
+      top = 312
+      left = 159
+      height = 18
+      width = 300
+      reprint = detailoverflow
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- TextBox
+      expr = "Dringende A-Artikel!"
+      inputmask = 
+      type = C
+      Align = Right
+      top = 323
+      left = 511
+      height = 29
+      width = 234
+      removeblanks = .T.
+      printwhen = anlieferungen.dringend
+      reprint = detailoverflow
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial Black
+      FontSize = 14
+      ForeColor = RGB(255,000,000)
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- TextBox
+      expr = alltrim(anlieferungen.container)+iif(empty(anlieferungen.zusatzladung),"",chr(13)+"*** "+alltrim(anlieferungen.zusatzladung)+" ***")
+      inputmask = 
+      type = C
+      stretch = .T.
+      Align = Left
+      top = 334
+      left = 159
+      height = 18
+      width = 348
+      reprint = detailoverflow
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Picture or OleControl
+      controlsource = woakti.faxbild
+      stretch = retainshape
+      top = 12
+      left = 36
+      height = 226
+      width = 698
+      printwhen = lLogo=.T.
+      position = Top
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Opaque
+
+   *-- REPORT BAND
+   Band = GroupHeader
+   Height = 40.0032
+   GroupBy = name+interne_logistik_text
+   HeightToStartNewGroup = 11811.000
+
+      *-- Line
+      orientation = Horizontal
+      top = 39
+      left = 12
+      height = 1
+      width = 733
+      reprint = [name+interne_logistik_text] changes
+      position = Float
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- TextBox
+      expr = "INTERNE LOGISTIK: "+interne_logistik_text
+      inputmask = "@B"
+      type = N
+      Align = Left
+      top = 5
+      left = 25
+      height = 17
+      width = 720
+      removeblanks = .T.
+      printwhen = interne_logistik
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 9
+      ForeColor = RGB(255,000,000)
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- TextBox
+      expr = "Sichtkontrolle"
+      inputmask = 
+      type = C
+      Align = Right
+      top = 20
+      left = 469
+      height = 20
+      width = 276
+      reprint = [name+interne_logistik_text] changes
+      position = Float
+      FontName = Arial
+      FontSize = 11
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- TextBox
+      expr = substr(name,1,3)
+      inputmask = "@B"
+      type = N
+      Align = Left
+      top = 22
+      left = 25
+      height = 17
+      width = 276
+      reprint = [name+interne_logistik_text] changes
+      position = Float
+      FontName = Arial
+      FontSize = 9
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+   *-- REPORT BAND
+   Band = GroupHeader
+   Height = 0.0000
+   GroupBy = typ
+
+
+   *-- REPORT BAND
+   Band = Detail
+   Height = 33.0048
+
+      *-- Label
+      caption = "Ok"
+      top = 4
+      left = 628
+      height = 14
+      width = 15
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Mangel?"
+      top = 4
+      left = 686
+      height = 14
+      width = 47
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Shape
+      curvature = 0
+      top = 6
+      left = 653
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 6
+      left = 737
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- TextBox
+      expr = bez
+      inputmask = 
+      type = C
+      Align = Left
+      top = 2
+      left = 25
+      height = 16
+      width = 408
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = menge_fertig
+      inputmask = 
+      type = C
+      Align = Right
+      top = 2
+      left = 381
+      height = 16
+      width = 61
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = einheit_a
+      inputmask = 
+      type = C
+      Align = Left
+      top = 2
+      left = 444
+      height = 16
+      width = 28
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = iif(not empty(block),"Block "+block,"")
+      inputmask = 
+      type = C
+      stretch = .T.
+      Align = Left
+      top = 4
+      left = 475
+      height = 14
+      width = 77
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 7
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = bestellung+" / "+alltrim(str(pos))
+      inputmask = 
+      type = C
+      Align = Left
+      top = 4
+      left = 554
+      height = 14
+      width = 61
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 7
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = iif(kommissionsware,"KOM ","")+alltrim(kommission)
+      inputmask = 
+      type = C
+      Align = Right
+      top = 18
+      left = 545
+      height = 15
+      width = 203
+      removeblanks = .T.
+      printwhen = kommissionsware=.t. or not empty(kommission)
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial Black
+      FontSize = 7
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+   *-- REPORT BAND
+   Band = GroupFooter
+   Height = 19.0080
+   GroupBy = typ
+
+
+   *-- REPORT BAND
+   Band = GroupFooter
+   Height = 0.0000
+   GroupBy = name+interne_logistik_text
+   HeightToStartNewGroup = 11811.000
+
+
+   *-- REPORT BAND
+   Band = PageFooter
+   Height = 34.0032
+
+      *-- Line
+      orientation = Horizontal
+      top = 2
+      left = 25
+      height = 1
+      width = 720
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- TextBox
+      expr = datetime()
+      inputmask = 
+      type = C
+      Align = Left
+      top = 6
+      left = 25
+      height = 18
+      width = 168
+      reprint = detailoverflow
+      position = Top
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = alltrim(anlieferungen.zusatzladung)
+      inputmask = 
+      type = C
+      Align = Center
+      top = 6
+      left = 110
+      height = 17
+      width = 576
+      reprint = detailoverflow
+      reprint = [name+interne_logistik_text] changes
+      position = Top
+      FontName = Arial
+      FontSize = 9
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+      *-- TextBox
+      expr = _pageno
+      inputmask = 
+      type = C
+      Align = Right
+      top = 6
+      left = 576
+      height = 18
+      width = 168
+      reprint = detailoverflow
+      position = Top
+      FontName = Arial
+      FontSize = 10
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+
+   *-- REPORT BAND
+   Band = Summary
+   Height = 279.0048
+
+      *-- Label
+      caption = "Checkliste Unmaßplatten"
+      top = 15
+      left = 34
+      height = 16
+      width = 182
+      position = Top
+      FontName = Verdana
+      FontSize = 10
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Checkliste Fliesen/Boden"
+      top = 15
+      left = 401
+      height = 16
+      width = 186
+      position = Top
+      FontName = Verdana
+      FontSize = 10
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Stärke"
+      top = 37
+      left = 34
+      height = 14
+      width = 36
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Stärke"
+      top = 37
+      left = 400
+      height = 14
+      width = 36
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ok"
+      top = 38
+      left = 231
+      height = 14
+      width = 15
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Mangel?"
+      top = 38
+      left = 285
+      height = 14
+      width = 47
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ok"
+      top = 38
+      left = 593
+      height = 14
+      width = 15
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Mangel?"
+      top = 38
+      left = 651
+      height = 14
+      width = 47
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Oberfläche"
+      top = 55
+      left = 34
+      height = 14
+      width = 60
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Oberfläche"
+      top = 55
+      left = 400
+      height = 14
+      width = 60
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ok"
+      top = 56
+      left = 231
+      height = 14
+      width = 15
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Mangel?"
+      top = 56
+      left = 285
+      height = 14
+      width = 47
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ok"
+      top = 56
+      left = 593
+      height = 14
+      width = 15
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Mangel?"
+      top = 56
+      left = 651
+      height = 14
+      width = 47
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Abmessungen"
+      top = 73
+      left = 34
+      height = 14
+      width = 82
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Material im Winkel?"
+      top = 73
+      left = 400
+      height = 14
+      width = 108
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ok"
+      top = 74
+      left = 231
+      height = 14
+      width = 15
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Mangel?"
+      top = 74
+      left = 285
+      height = 14
+      width = 47
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ja"
+      top = 74
+      left = 593
+      height = 14
+      width = 12
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Nein"
+      top = 74
+      left = 651
+      height = 14
+      width = 24
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Rückseite"
+      top = 91
+      left = 34
+      height = 14
+      width = 55
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Schüsselig?"
+      top = 91
+      left = 400
+      height = 14
+      width = 68
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ok"
+      top = 92
+      left = 231
+      height = 14
+      width = 15
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Mangel?"
+      top = 92
+      left = 285
+      height = 14
+      width = 47
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ja"
+      top = 92
+      left = 593
+      height = 14
+      width = 12
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Nein"
+      top = 92
+      left = 651
+      height = 14
+      width = 24
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Sonstiges"
+      top = 109
+      left = 34
+      height = 14
+      width = 56
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Sonstiges"
+      top = 109
+      left = 400
+      height = 14
+      width = 56
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ok"
+      top = 110
+      left = 231
+      height = 14
+      width = 15
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Mangel?"
+      top = 110
+      left = 285
+      height = 14
+      width = 47
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ok"
+      top = 110
+      left = 593
+      height = 14
+      width = 15
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Mangel?"
+      top = 110
+      left = 651
+      height = 14
+      width = 47
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Fotografiert?"
+      top = 127
+      left = 34
+      height = 14
+      width = 72
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ja"
+      top = 127
+      left = 231
+      height = 14
+      width = 12
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Nein"
+      top = 127
+      left = 285
+      height = 14
+      width = 24
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Fotografiert?"
+      top = 127
+      left = 400
+      height = 14
+      width = 72
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Ja"
+      top = 127
+      left = 593
+      height = 14
+      width = 12
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Nein"
+      top = 127
+      left = 651
+      height = 14
+      width = 24
+      position = Top
+      FontName = Arial
+      FontSize = 8
+      BorderWidth = 0
+      BorderStyle = 0
+      FillStyle = 0
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Label
+      caption = "Kontrolliert am / durch:"
+      top = 251
+      left = 34
+      height = 16
+      width = 192
+      position = Top
+      FontName = Courier New
+      FontSize = 10
+      BackStyle = Transparent
+      FontBold = .T.
+
+      *-- Line
+      orientation = Horizontal
+      top = 147
+      left = 22
+      height = 1
+      width = 355
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      BackStyle = Opaque
+
+      *-- Line
+      orientation = Horizontal
+      top = 147
+      left = 389
+      height = 1
+      width = 355
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      BackStyle = Opaque
+
+      *-- Line
+      orientation = Vertical
+      top = 192
+      left = 432
+      height = 1
+      width = 1
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      BackStyle = Opaque
+
+      *-- Line
+      orientation = Horizontal
+      top = 272
+      left = 240
+      height = 1
+      width = 253
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 8
+      left = 7
+      height = 229
+      width = 373
+      removeblanks = .T.
+      printwhen = lMitTyp3=.f.
+      position = Top
+      BackColor = RGB(255,255,255)
+      BorderWidth = 1
+      BorderStyle = 0
+      FillStyle = 1
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 8
+      left = 389
+      height = 229
+      width = 373
+      removeblanks = .T.
+      printwhen = lMitTyp1=.f.
+      position = Top
+      BackColor = RGB(255,255,255)
+      BorderWidth = 1
+      BorderStyle = 0
+      FillStyle = 1
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 11
+      left = 22
+      height = 225
+      width = 357
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 11
+      left = 389
+      height = 225
+      width = 355
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 40
+      left = 253
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 40
+      left = 619
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 41
+      left = 338
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 41
+      left = 704
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 58
+      left = 253
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 58
+      left = 619
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 59
+      left = 338
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 59
+      left = 704
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 76
+      left = 253
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 76
+      left = 619
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 77
+      left = 338
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 77
+      left = 704
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 94
+      left = 253
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 94
+      left = 619
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 95
+      left = 338
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 95
+      left = 704
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 112
+      left = 253
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 112
+      left = 619
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 113
+      left = 338
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 113
+      left = 704
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 130
+      left = 253
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 130
+      left = 619
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 131
+      left = 338
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 131
+      left = 704
+      height = 8
+      width = 8
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+      *-- Shape
+      curvature = 0
+      top = 240
+      left = 22
+      height = 39
+      width = 722
+      position = Top
+      BorderWidth = 1
+      BorderStyle = 8
+      FillStyle = 0
+      BackStyle = Opaque
+
+**************************************************

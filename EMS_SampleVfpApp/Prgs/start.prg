@@ -1,0 +1,105 @@
+SET EXCL off
+SET CENT on
+SET DELE on
+SET TALK off
+SET SAFE off
+SET MULT on
+SET TABLEVALIDATE TO 2
+SET TABLEPROMPT off
+Set Sysmenu Off
+RELEASE WINDOWS standard
+
+
+*!*	_screen.Caption = 'Employee Management System'
+*!*	_screen.MaxHeight = 520   && 610
+*!*	_screen.MaxWidth  = 560
+*!*	_screen.Height = 520
+*!*	_screen.Width  = 560
+*!*	*_screen.Icon = 'D:\MACUTIL\MULTIDOC.ICO'
+*!*	_screen.AutoCenter = .t.
+*!*	_screen.TitleBar = 0 
+*!*	_screen.BackColor = RGB(137,165,237)
+*!*	_screen.WindowType= 1
+*!*	_screen.BorderStyle= 2  
+*!*	SET DEFAULT TO (ADDBS(JUSTPATH(SYS(16))))
+*!*	RELEASE APP_GLOBAL
+*!*	PUBLIC APP_GLOBAL
+
+*!*	RELEASE VirtualUI
+*!*	PUBLIC VirtualUI
+*!*	SET ASSERTS ON
+*!*	ASSERT .f.
+*!*	VirtualUI=CREATEOBJECT("Thinfinity.VirtualUI")
+*!*	*!*	VirtualUI.DevMode=.T.
+*!*	*!*	VirtualUI.DevServer.Port=8080
+*!*	*!*	VirtualUI.DevServer.Enabled=.T.
+*!*	VirtualUI.StdDialogs=.T.
+*!*	VirtualUI.Start(60)
+
+IF drivetype('m:') <> 3
+	RUN /N subst   M:  \\amznfsxyoqknv67.vfpcloud.local\share 
+	&&\\amznfsxyoqknv67.vfpcloud.local\share 
+ENDIF 
+
+ss = FULLPATH(CURDIR())
+*!*	SET DEFAULT TO (LEFT(CURDIR(),AT("P",CURDIR())-1))
+SET DEFAULT TO (ss)
+*!*	cCurrentDir=FULLPATH(CURDIR()+"..")
+lc_File = addbs(fullpath(ss))+"EMS.ini" 
+lcValue = ""
+IF FILE(lc_File)
+	Lc_DataPathinfo		=FILETOSTR(lc_File)
+	*FOR lnI =1 TO MEMLINES(Lc_DataPathinfo)	
+		*Lcinfo = MLINE(Lc_DataPathinfo,lnI)
+		Ln_pos = AT('=',Lc_DataPathinfo)
+		Lcpara = LEFT(lc_datapathinfo,ln_pos)
+*!*			Lcpara = UPPER(ALLTRIM(substr(Lcinfo,Ln_pos +1,len(allt(lcInfo)))))
+		DO case
+			CASE 'DATA' $ UPPER(allt(lcpara))
+*!*					Lcvalue= SUBSTR(Lcinfo,Ln_pos +1)
+				lcValue =   UPPER(ALLTRIM(substr(Lc_DataPathinfo,Ln_pos +1,len(allt(Lc_DataPathinfo)))))
+		Endcase 
+*!*		EndFor
+ENDIF
+IF EMPTY(lcValue) OR lcValue  = " "
+	Messagebox("Data path not set in Configuration file...")
+	RETURN .f.
+ENDIF 
+
+IF !directory(lcValue)
+	Messagebox("Data path specified in EMS.Ini, does not exist...")
+	RETURN .f.
+ENDIF 
+
+
+
+SET DEFAULT TO (ss)
+SET PATH TO forms;libs;prgs;bmps;data;reports; &lcValue ; ADDITIVE
+
+*!*	SET PATH TO "&lcValue" ADDITIVE 
+
+
+
+*!*	open database employee
+*!*	_screen.Visible= .F.
+SET SYSMENU off
+_screen.Icon="favicon.ico"
+
+_screen.Caption="Demo System"
+Application.Visible = .T.
+_screen.WindowState = 2
+DO Ems.mpr
+
+*!*	DO FORM empsearch 
+SET EXACT off
+READ EVENTS
+
+PROCEDURE confirmquit
+
+IF MESSAGEBOX('Close the Program', 36, 'Please Confirm') = 6
+	RETURN
+ELSE
+	CLEAR EVENTS
+	RETURN
+ENDIF
+

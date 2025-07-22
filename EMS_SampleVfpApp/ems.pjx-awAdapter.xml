@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<ems.pjx-awadapter>
+	<config type="object" class="awadapterpjconfig">
+		<adaptuser>iramesh</adaptuser>
+		<adaptusertest>iramesh</adaptusertest>
+		<analyseuser>iramesh</analyseuser>
+		<analyseusertest>iramesh</analyseusertest>
+		<appcode></appcode>
+		<classfolder>D:\EMS_SampleVfpApp\Libs\</classfolder>
+		<classprefix>rrr</classprefix>
+		<filesmodified></filesmodified>
+		<filesmodifiedtest></filesmodifiedtest>
+		<prgfolder></prgfolder>
+		<refreshuser></refreshuser>
+		<refreshusertest></refreshusertest>
+		<shareuser></shareuser>
+		<testfolder>Test</testfolder>
+		<comment>1</comment>
+		<excluded>0</excluded>
+		<ignored>0</ignored>
+		<propsave>1</propsave>
+		<subclassnot>0</subclassnot>
+		<test>1</test>
+		<testreadwrite>0</testreadwrite>
+		<testreadwritechosen>0</testreadwritechosen>
+		<trdparty>0</trdparty>
+		<virtuals>0</virtuals>
+		<virtualstest>0</virtualstest>
+		<wctempfolder>0</wctempfolder>
+		<opgignore>1</opgignore>
+		<opgreview>1</opgreview>
+		<filters type="object" class="empty">
+			<awadapttype></awadapttype>
+			<bc></bc>
+			<class></class>
+			<file></file>
+			<mod></mod>
+			<awadapt>0</awadapt>
+			<ignore>1</ignore>
+			<review>1</review>
+		</filters>
+		<adapt></adapt>
+		<adapttest>2020-04-23T15:14</adapttest>
+		<analyse>2020-04-23T15:06</analyse>
+		<analysetest>2020-04-23T15:10</analysetest>
+		<appfiles></appfiles>
+		<appfilestest></appfilestest>
+		<refresh></refresh>
+		<refreshtest></refreshtest>
+		<share></share>
+	</config>
+</ems.pjx-awadapter>
