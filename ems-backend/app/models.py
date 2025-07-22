@@ -49,7 +49,7 @@ class Employee(Base):
     homeemail = Column(String(50))
     homephone = Column(String(15))
     mobile = Column(String(15))
-    ssn = Column(String(11), unique=True, index=True)
+    ssn = Column(String(11), unique=True, index=True, nullable=True)
     emptype = Column(Integer)
     empyear = Column(Integer)
     empmonth = Column(Integer)

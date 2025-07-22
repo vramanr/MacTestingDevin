@@ -106,7 +106,11 @@ export default function EmployeeManagement() {
       resetForm()
     } catch (error) {
       console.error('Error saving employee:', error)
-      alert('Failed to save employee. Please check the form data and try again.')
+      if (error instanceof TypeError && error.message.includes('Failed to fetch')) {
+        alert('Network error: Unable to connect to the server. Please check your connection and try again.')
+      } else {
+        alert('Failed to save employee. Please check the form data and try again.')
+      }
     }
   }
 

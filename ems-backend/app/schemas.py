@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, validator
 from typing import Optional
 from datetime import date, datetime
 
@@ -79,7 +79,9 @@ class EmployeeBase(BaseModel):
     membership: Optional[str] = None
 
 class EmployeeCreate(EmployeeBase):
-    pass
+    @validator('ssn', pre=True)
+    def empty_str_to_none(cls, v):
+        return None if v == '' else v
 
 class EmployeeUpdate(BaseModel):
     fname: Optional[str] = None
@@ -104,6 +106,10 @@ class EmployeeUpdate(BaseModel):
     empstartdt: Optional[date] = None
     empleavedt: Optional[date] = None
     membership: Optional[str] = None
+
+    @validator('ssn', pre=True)
+    def empty_str_to_none(cls, v):
+        return None if v == '' else v
 
 class Employee(EmployeeBase):
     id: int
