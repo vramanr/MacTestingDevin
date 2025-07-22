@@ -397,20 +397,174 @@ export default function EmployeeManagement() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Department
+                      Birth Date
+                    </label>
+                    <input
+                      type="date"
+                      value={formData.birthdate}
+                      onChange={(e) => setFormData({ ...formData, birthdate: e.target.value })}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Sex
+                    </label>
+                    <div className="flex space-x-4">
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="sex"
+                          value="M"
+                          checked={formData.sex === 'M'}
+                          onChange={(e) => setFormData({ ...formData, sex: e.target.value })}
+                          className="mr-2"
+                        />
+                        Male
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="sex"
+                          value="F"
+                          checked={formData.sex === 'F'}
+                          onChange={(e) => setFormData({ ...formData, sex: e.target.value })}
+                          className="mr-2"
+                        />
+                        Female
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Work Phone
+                    </label>
+                    <input
+                      type="tel"
+                      value={formData.workphone}
+                      onChange={(e) => setFormData({ ...formData, workphone: e.target.value })}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                      maxLength={15}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Extension
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.workextn}
+                      onChange={(e) => setFormData({ ...formData, workextn: e.target.value })}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                      maxLength={10}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Work Email
+                    </label>
+                    <input
+                      type="email"
+                      value={formData.workemail}
+                      onChange={(e) => setFormData({ ...formData, workemail: e.target.value })}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                      maxLength={50}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Employee Type
                     </label>
                     <select
-                      value={formData.department}
-                      onChange={(e) => setFormData({ ...formData, department: e.target.value })}
+                      value={formData.emptype}
+                      onChange={(e) => setFormData({ ...formData, emptype: e.target.value })}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                     >
-                      <option value="">Select Department</option>
-                      {departments.map((dept) => (
-                        <option key={dept.id} value={dept.idcode}>
-                          {dept.name}
-                        </option>
-                      ))}
+                      <option value="">Select Type</option>
+                      <option value="1">Trainee</option>
+                      <option value="2">Regular</option>
+                      <option value="3">Contract</option>
+                      <option value="4">Consultant</option>
                     </select>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Emp Period (Years)
+                      </label>
+                      <input
+                        type="number"
+                        value={formData.empyear}
+                        onChange={(e) => setFormData({ ...formData, empyear: e.target.value })}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                        min="0"
+                        max="50"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Months
+                      </label>
+                      <input
+                        type="number"
+                        value={formData.empmonth}
+                        onChange={(e) => setFormData({ ...formData, empmonth: e.target.value })}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                        min="0"
+                        max="11"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Status
+                    </label>
+                    <div className="flex space-x-4">
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="empstatus"
+                          value="Active"
+                          checked={formData.empstatus === 'Active'}
+                          onChange={(e) => setFormData({ ...formData, empstatus: e.target.value })}
+                          className="mr-2"
+                        />
+                        Active
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="radio"
+                          name="empstatus"
+                          value="Inactive"
+                          checked={formData.empstatus === 'Inactive'}
+                          onChange={(e) => setFormData({ ...formData, empstatus: e.target.value })}
+                          className="mr-2"
+                        />
+                        Inactive
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Start Date
+                    </label>
+                    <input
+                      type="date"
+                      value={formData.empstartdt}
+                      onChange={(e) => setFormData({ ...formData, empstartdt: e.target.value })}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Leaving Date
+                    </label>
+                    <input
+                      type="date"
+                      value={formData.empleavedt}
+                      onChange={(e) => setFormData({ ...formData, empleavedt: e.target.value })}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                    />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -431,52 +585,153 @@ export default function EmployeeManagement() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Status
+                      Department
                     </label>
                     <select
-                      value={formData.empstatus}
-                      onChange={(e) => setFormData({ ...formData, empstatus: e.target.value })}
+                      value={formData.department}
+                      onChange={(e) => setFormData({ ...formData, department: e.target.value })}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                     >
-                      <option value="Active">Active</option>
-                      <option value="Inactive">Inactive</option>
-                      <option value="Terminated">Terminated</option>
+                      <option value="">Select Department</option>
+                      {departments.map((dept) => (
+                        <option key={dept.id} value={dept.idcode}>
+                          {dept.name}
+                        </option>
+                      ))}
                     </select>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Work Email
+                      Home Email
                     </label>
                     <input
                       type="email"
-                      value={formData.workemail}
-                      onChange={(e) => setFormData({ ...formData, workemail: e.target.value })}
+                      value={formData.homeemail}
+                      onChange={(e) => setFormData({ ...formData, homeemail: e.target.value })}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                       maxLength={50}
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Work Phone
+                      Home Phone
                     </label>
                     <input
                       type="tel"
-                      value={formData.workphone}
-                      onChange={(e) => setFormData({ ...formData, workphone: e.target.value })}
+                      value={formData.homephone}
+                      onChange={(e) => setFormData({ ...formData, homephone: e.target.value })}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                       maxLength={15}
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Start Date
+                      Mobile
                     </label>
                     <input
-                      type="date"
-                      value={formData.empstartdt}
-                      onChange={(e) => setFormData({ ...formData, empstartdt: e.target.value })}
+                      type="tel"
+                      value={formData.mobile}
+                      onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                      maxLength={15}
                     />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      SSN
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.ssn}
+                      onChange={(e) => setFormData({ ...formData, ssn: e.target.value })}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                      maxLength={11}
+                      placeholder="XXX-XX-XXXX"
+                    />
+                  </div>
+                  <div className="md:col-span-2">
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Address
+                    </label>
+                    <textarea
+                      value={formData.homeaddres}
+                      onChange={(e) => setFormData({ ...formData, homeaddres: e.target.value })}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                      rows={3}
+                    />
+                  </div>
+                  <div className="md:col-span-2">
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Membership
+                    </label>
+                    <div className="flex space-x-6">
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          checked={formData.membership?.includes('Elite') || false}
+                          onChange={(e) => {
+                            const memberships = formData.membership ? formData.membership.split(',') : []
+                            if (e.target.checked) {
+                              if (!memberships.includes('Elite')) {
+                                memberships.push('Elite')
+                              }
+                            } else {
+                              const index = memberships.indexOf('Elite')
+                              if (index > -1) {
+                                memberships.splice(index, 1)
+                              }
+                            }
+                            setFormData({ ...formData, membership: memberships.join(',') })
+                          }}
+                          className="mr-2"
+                        />
+                        Elite
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          checked={formData.membership?.includes('Platinum') || false}
+                          onChange={(e) => {
+                            const memberships = formData.membership ? formData.membership.split(',') : []
+                            if (e.target.checked) {
+                              if (!memberships.includes('Platinum')) {
+                                memberships.push('Platinum')
+                              }
+                            } else {
+                              const index = memberships.indexOf('Platinum')
+                              if (index > -1) {
+                                memberships.splice(index, 1)
+                              }
+                            }
+                            setFormData({ ...formData, membership: memberships.join(',') })
+                          }}
+                          className="mr-2"
+                        />
+                        Platinum
+                      </label>
+                      <label className="flex items-center">
+                        <input
+                          type="checkbox"
+                          checked={formData.membership?.includes('Classic') || false}
+                          onChange={(e) => {
+                            const memberships = formData.membership ? formData.membership.split(',') : []
+                            if (e.target.checked) {
+                              if (!memberships.includes('Classic')) {
+                                memberships.push('Classic')
+                              }
+                            } else {
+                              const index = memberships.indexOf('Classic')
+                              if (index > -1) {
+                                memberships.splice(index, 1)
+                              }
+                            }
+                            setFormData({ ...formData, membership: memberships.join(',') })
+                          }}
+                          className="mr-2"
+                        />
+                        Classic
+                      </label>
+                    </div>
                   </div>
                 </div>
                 <div className="flex justify-end space-x-3 mt-6">
