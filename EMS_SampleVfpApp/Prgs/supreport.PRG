@@ -38,4 +38,4 @@ If Vartype(oOUTPUT) = 'O'
 Endif
 
 *!*	REPORT FORM emplist.frx TO PRINT PROMPT PREVIEW NOCONSOLE 
-USE IN IIF(USED("deplist"), "deplist", 0)
+USE IN IIF(USED("suplist"), "suplist", 0)
