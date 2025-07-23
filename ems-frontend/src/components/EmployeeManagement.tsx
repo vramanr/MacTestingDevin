@@ -12,6 +12,8 @@ export default function EmployeeManagement() {
   const [showSearchModal, setShowSearchModal] = useState(false)
   const [editingEmployee, setEditingEmployee] = useState<Employee | null>(null)
   const [searchFilters, setSearchFilters] = useState<EmployeeSearch>({})
+  const [searchResultCount, setSearchResultCount] = useState<number | null>(null)
+  const [isSearchActive, setIsSearchActive] = useState(false)
   const [formData, setFormData] = useState({
     employeeid: '',
     fname: '',
@@ -118,6 +120,8 @@ export default function EmployeeManagement() {
     try {
       const results = await apiClient.searchEmployees(searchFilters)
       setEmployees(results)
+      setSearchResultCount(results.length)
+      setIsSearchActive(true)
       setShowSearchModal(false)
     } catch (error) {
       console.error('Error searching employees:', error)
@@ -127,6 +131,8 @@ export default function EmployeeManagement() {
   const resetSearch = async () => {
     setSearchFilters({})
     setSearchTerm('')
+    setSearchResultCount(null)
+    setIsSearchActive(false)
     await fetchInitialData()
   }
 
@@ -259,6 +265,19 @@ export default function EmployeeManagement() {
             className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
           />
         </div>
+        {isSearchActive && searchResultCount !== null && (
+          <div className="mt-2 flex items-center justify-between">
+            <div className="text-sm text-gray-600">
+              <span className="font-medium">{searchResultCount}</span> matching employee{searchResultCount !== 1 ? 's' : ''} found
+            </div>
+            <button
+              onClick={resetSearch}
+              className="text-sm text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Clear Search
+            </button>
+          </div>
+        )}
       </div>
 
       <div className="bg-white shadow overflow-hidden sm:rounded-md">
